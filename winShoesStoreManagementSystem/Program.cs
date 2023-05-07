@@ -16,7 +16,7 @@ namespace winShoesStoreManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAddShoes());
+            Application.Run(new frmShoesSizes());
         }
     }
 }

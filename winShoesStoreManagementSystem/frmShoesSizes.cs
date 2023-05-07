@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmAddShoes : Form
+    public partial class frmShoesSizes : Form
     {
-        public frmAddShoes()
+        public frmShoesSizes()
         {
             InitializeComponent();
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
