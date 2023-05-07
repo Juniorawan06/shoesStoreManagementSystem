@@ -35,7 +35,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(390, 87);
+            this.label1.Location = new System.Drawing.Point(404, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 36);
             this.label1.TabIndex = 5;
@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(1037, 552);
             this.Controls.Add(this.label1);
             this.Name = "frmShoesSizes";
-            this.Text = "frmShoesSizes";
+            this.Text = "Shoes Sizes";
             this.ResumeLayout(false);
             this.PerformLayout();
 
