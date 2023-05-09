@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmLogin : Form
+    public partial class frmregister : Form
     {
         public frmLogin()
         {

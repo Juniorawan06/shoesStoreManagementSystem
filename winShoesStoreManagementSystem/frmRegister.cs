@@ -16,5 +16,10 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private void gunaTextBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
