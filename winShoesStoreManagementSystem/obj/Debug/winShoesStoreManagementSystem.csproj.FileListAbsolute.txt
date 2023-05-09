@@ -28,3 +28,18 @@ C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreMan
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmRegister.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.exe
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.pdb
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesSizes.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmLogin.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.Properties.Resources.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.GenerateResource.cache
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.exe.config
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.exe
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.pdb
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CopyComplete
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmSignUp.resources
