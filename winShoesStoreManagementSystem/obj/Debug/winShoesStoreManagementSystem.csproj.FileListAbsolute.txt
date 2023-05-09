@@ -9,3 +9,18 @@ C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreMan
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.exe
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.pdb
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.exe.config
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.exe
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\winShoesStoreManagementSystem.pdb
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.AssemblyReference.cache
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAddShoes.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesSizes.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmLogin.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.Properties.Resources.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.GenerateResource.cache
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.exe
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.pdb
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\bin\Debug\Guna.UI.dll
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CopyComplete
