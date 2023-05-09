@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmLogin : Form
+    public partial class frmDashboard : Form
     {
-        public frmLogin()
+        public frmDashboard()
         {
             InitializeComponent();
-        }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            frmDashboard d = new frmDashboard();
-            d.Show();
         }
     }
 }

@@ -26,3 +26,4 @@ C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagemen
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CopyComplete
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmLogin.resources
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CopyComplete
+C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
