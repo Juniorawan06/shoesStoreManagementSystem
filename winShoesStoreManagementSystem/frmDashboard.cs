@@ -16,5 +16,10 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnShoesSizes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
