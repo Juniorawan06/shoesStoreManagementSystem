@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmregister : Form
+    public partial class frmLogin : Form
     {
         public frmLogin()
         {
@@ -21,6 +21,12 @@ namespace winShoesStoreManagementSystem
         {
             frmDashboard d = new frmDashboard();
             d.Show();
+        }
+
+        private void lblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSignUp sp = new frmSignUp();
+            sp.Show();
         }
     }
 }
