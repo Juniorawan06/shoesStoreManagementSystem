@@ -21,6 +21,7 @@ namespace winShoesStoreManagementSystem
         {
             frmLogin login = new frmLogin();
             login.Show();
+            Hide();
         }
     }
 }
