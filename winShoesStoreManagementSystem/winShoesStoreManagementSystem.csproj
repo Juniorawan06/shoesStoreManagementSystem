@@ -98,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -112,6 +113,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porjectLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porjectLogo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
