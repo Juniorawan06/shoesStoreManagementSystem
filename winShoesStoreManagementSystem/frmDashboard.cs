@@ -16,5 +16,14 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnShoesSizes_Click(object sender, EventArgs e)
+        {
+            frmShoesSizes sizes = new frmShoesSizes();
+            sizes.TopLevel = false;
+            panelContainer.Controls.Add(sizes);
+            sizes.Dock = DockStyle.Fill;
+            sizes.Visible = true;
+        }
     }
 }

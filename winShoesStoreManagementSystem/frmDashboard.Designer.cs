@@ -44,7 +44,7 @@
             this.lblDashborad = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -142,6 +142,7 @@
             this.btnShoesSizes.TabIndex = 1;
             this.btnShoesSizes.Text = "Shoes Sizes";
             this.btnShoesSizes.UseVisualStyleBackColor = false;
+            this.btnShoesSizes.Click += new System.EventHandler(this.btnShoesSizes_Click);
             // 
             // btnDashboard
             // 
@@ -259,14 +260,14 @@
             this.txtSearch.Text = "Search...";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel4
+            // panelContainer
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(871, 618);
-            this.panel4.TabIndex = 0;
+            this.panelContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(200, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(871, 618);
+            this.panelContainer.TabIndex = 0;
             // 
             // frmDashboard
             // 
@@ -274,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 618);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -294,7 +295,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Label lblStoreName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
