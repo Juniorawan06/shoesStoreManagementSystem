@@ -16,5 +16,30 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private frmShoesSizes sizes;
+
+        private void btnShoesSizes_Click(object sender, EventArgs e)
+        {
+            frmShoesSizes sizes = new frmShoesSizes
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(sizes);
+            sizes.Show();
+        }
+
+        private void btnShoesColor_Click(object sender, EventArgs e)
+        {
+            pnlDashboard.Controls.Remove(sizes);
+            frmShoesColors colors = new frmShoesColors
+            {
+                TopLevel = false,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(colors);
+            colors.Show();
+        }
     }
 }

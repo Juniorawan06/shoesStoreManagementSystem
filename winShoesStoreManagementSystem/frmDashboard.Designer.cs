@@ -44,7 +44,7 @@
             this.lblDashborad = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlDashboard = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -126,6 +126,7 @@
             this.btnShoesColor.TabIndex = 2;
             this.btnShoesColor.Text = "Shoes Color";
             this.btnShoesColor.UseVisualStyleBackColor = false;
+            this.btnShoesColor.Click += new System.EventHandler(this.btnShoesColor_Click);
             // 
             // btnShoesSizes
             // 
@@ -142,6 +143,7 @@
             this.btnShoesSizes.TabIndex = 1;
             this.btnShoesSizes.Text = "Shoes Sizes";
             this.btnShoesSizes.UseVisualStyleBackColor = false;
+            this.btnShoesSizes.Click += new System.EventHandler(this.btnShoesSizes_Click);
             // 
             // btnDashboard
             // 
@@ -227,12 +229,12 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(577, 12);
+            this.btnSearch.Location = new System.Drawing.Point(562, 12);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(45, 41);
+            this.btnSearch.Size = new System.Drawing.Size(60, 41);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
@@ -252,21 +254,20 @@
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.Radius = 12;
+            this.txtSearch.Radius = 5;
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(355, 41);
             this.txtSearch.TabIndex = 7;
             this.txtSearch.Text = "Search...";
-            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel4
+            // pnlDashboard
             // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(871, 618);
-            this.panel4.TabIndex = 0;
+            this.pnlDashboard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDashboard.Location = new System.Drawing.Point(200, 0);
+            this.pnlDashboard.Name = "pnlDashboard";
+            this.pnlDashboard.Size = new System.Drawing.Size(871, 618);
+            this.pnlDashboard.TabIndex = 0;
             // 
             // frmDashboard
             // 
@@ -274,7 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 618);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pnlDashboard);
             this.Controls.Add(this.panel1);
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -294,7 +295,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlDashboard;
         private System.Windows.Forms.Label lblStoreName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
