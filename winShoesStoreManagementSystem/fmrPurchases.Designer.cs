@@ -1,6 +1,6 @@
 ﻿namespace winShoesStoreManagementSystem
 {
-    partial class Form1
+    partial class fmrPurchases
     {
         /// <summary>
         /// Required designer variable.
