@@ -41,10 +41,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.lblDashborad = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.btnShoesStyles = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,9 +54,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
-            this.panel1.Controls.Add(this.btnLogOut);
-            this.panel1.Controls.Add(this.btnPurchases);
             this.panel1.Controls.Add(this.btnSale);
+            this.panel1.Controls.Add(this.btnPurchases);
+            this.panel1.Controls.Add(this.btnShoesStyles);
+            this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnShoesColor);
             this.panel1.Controls.Add(this.btnShoesSizes);
             this.panel1.Controls.Add(this.btnDashboard);
@@ -64,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 618);
+            this.panel1.Size = new System.Drawing.Size(200, 579);
             this.panel1.TabIndex = 0;
             // 
             // btnLogOut
@@ -75,7 +76,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 566);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 527);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(200, 52);
             this.btnLogOut.TabIndex = 5;
@@ -105,7 +106,7 @@
             this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSale.Image = ((System.Drawing.Image)(resources.GetObject("btnSale.Image")));
             this.btnSale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSale.Location = new System.Drawing.Point(0, 284);
+            this.btnSale.Location = new System.Drawing.Point(0, 388);
             this.btnSale.Name = "btnSale";
             this.btnSale.Size = new System.Drawing.Size(200, 52);
             this.btnSale.TabIndex = 3;
@@ -124,7 +125,7 @@
             this.btnShoesColor.Name = "btnShoesColor";
             this.btnShoesColor.Size = new System.Drawing.Size(200, 52);
             this.btnShoesColor.TabIndex = 2;
-            this.btnShoesColor.Text = "Shoes Color";
+            this.btnShoesColor.Text = "Shoes Colors";
             this.btnShoesColor.UseVisualStyleBackColor = false;
             this.btnShoesColor.Click += new System.EventHandler(this.btnShoesColor_Click);
             // 
@@ -195,48 +196,36 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.LightGray;
             this.panel2.Controls.Add(this.lblUsername);
-            this.panel2.Controls.Add(this.lblDashborad);
-            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.lblSubject);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(871, 80);
+            this.panel2.Size = new System.Drawing.Size(830, 80);
             this.panel2.TabIndex = 1;
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(714, 19);
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblUsername.Location = new System.Drawing.Point(652, 16);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(124, 29);
+            this.lblUsername.Size = new System.Drawing.Size(152, 37);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
             // 
-            // lblDashborad
+            // lblSubject
             // 
-            this.lblDashborad.AutoSize = true;
-            this.lblDashborad.BackColor = System.Drawing.Color.Transparent;
-            this.lblDashborad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDashborad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblDashborad.Location = new System.Drawing.Point(72, 19);
-            this.lblDashborad.Name = "lblDashborad";
-            this.lblDashborad.Size = new System.Drawing.Size(131, 29);
-            this.lblDashborad.TabIndex = 0;
-            this.lblDashborad.Text = "Dashboard";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(562, 12);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(60, 41);
-            this.btnSearch.TabIndex = 8;
-            this.btnSearch.UseVisualStyleBackColor = false;
+            this.lblSubject.AutoSize = true;
+            this.lblSubject.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubject.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblSubject.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSubject.Location = new System.Drawing.Point(43, 16);
+            this.lblSubject.Name = "lblSubject";
+            this.lblSubject.Size = new System.Drawing.Size(164, 37);
+            this.lblSubject.TabIndex = 0;
+            this.lblSubject.Text = "Dashboard";
             // 
             // txtSearch
             // 
@@ -250,7 +239,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.Location = new System.Drawing.Point(267, 12);
+            this.txtSearch.Location = new System.Drawing.Point(251, 12);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -266,14 +255,30 @@
             this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDashboard.Location = new System.Drawing.Point(200, 0);
             this.pnlDashboard.Name = "pnlDashboard";
-            this.pnlDashboard.Size = new System.Drawing.Size(871, 618);
+            this.pnlDashboard.Size = new System.Drawing.Size(830, 579);
             this.pnlDashboard.TabIndex = 0;
+            // 
+            // btnShoesStyles
+            // 
+            this.btnShoesStyles.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShoesStyles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShoesStyles.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShoesStyles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShoesStyles.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesStyles.Image")));
+            this.btnShoesStyles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShoesStyles.Location = new System.Drawing.Point(0, 284);
+            this.btnShoesStyles.Name = "btnShoesStyles";
+            this.btnShoesStyles.Size = new System.Drawing.Size(200, 52);
+            this.btnShoesStyles.TabIndex = 6;
+            this.btnShoesStyles.Text = "Shoes Styles";
+            this.btnShoesStyles.UseVisualStyleBackColor = false;
+            this.btnShoesStyles.Click += new System.EventHandler(this.btnShoesStyles_Click);
             // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 618);
+            this.ClientSize = new System.Drawing.Size(1030, 579);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDashboard);
             this.Controls.Add(this.panel1);
@@ -299,7 +304,6 @@
         private System.Windows.Forms.Label lblStoreName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnSearch;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnPurchases;
@@ -307,6 +311,7 @@
         private System.Windows.Forms.Button btnShoesColor;
         private System.Windows.Forms.Button btnShoesSizes;
         private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblDashborad;
+        private System.Windows.Forms.Label lblSubject;
+        private System.Windows.Forms.Button btnShoesStyles;
     }
 }

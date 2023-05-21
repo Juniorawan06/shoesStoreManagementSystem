@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblShoesColors = new System.Windows.Forms.Label();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
@@ -43,7 +43,7 @@
             // 
             this.lblShoesColors.AutoSize = true;
             this.lblShoesColors.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblShoesColors.Location = new System.Drawing.Point(38, 11);
+            this.lblShoesColors.Location = new System.Drawing.Point(73, 15);
             this.lblShoesColors.Name = "lblShoesColors";
             this.lblShoesColors.Size = new System.Drawing.Size(201, 41);
             this.lblShoesColors.TabIndex = 10;
@@ -63,7 +63,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.Black;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(503, 19);
+            this.btnAddItems.Location = new System.Drawing.Point(538, 23);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -90,7 +90,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.Black;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(653, 19);
+            this.btnAddBulk.Location = new System.Drawing.Point(688, 23);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -105,33 +105,33 @@
             // 
             // gvShoesColors
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.gvShoesColors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gvShoesColors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gvShoesColors.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvShoesColors.BackgroundColor = System.Drawing.Color.White;
             this.gvShoesColors.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gvShoesColors.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gvShoesColors.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvShoesColors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvShoesColors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gvShoesColors.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvShoesColors.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gvShoesColors.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvShoesColors.EnableHeadersVisualStyles = false;
             this.gvShoesColors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvShoesColors.Location = new System.Drawing.Point(45, 160);
+            this.gvShoesColors.Location = new System.Drawing.Point(80, 164);
             this.gvShoesColors.Margin = new System.Windows.Forms.Padding(4);
             this.gvShoesColors.Name = "gvShoesColors";
             this.gvShoesColors.RowHeadersVisible = false;
@@ -174,7 +174,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(575, 113);
+            this.txtSearch.Location = new System.Drawing.Point(610, 117);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -188,12 +188,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 571);
+            this.ClientSize = new System.Drawing.Size(941, 539);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.gvShoesColors);
             this.Controls.Add(this.btnAddBulk);
             this.Controls.Add(this.btnAddItems);
             this.Controls.Add(this.lblShoesColors);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmShoesColors";
             this.Text = "frmShoesColors";
             ((System.ComponentModel.ISupportInitialize)(this.gvShoesColors)).EndInit();

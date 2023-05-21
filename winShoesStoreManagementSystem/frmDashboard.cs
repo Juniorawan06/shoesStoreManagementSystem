@@ -19,10 +19,12 @@ namespace winShoesStoreManagementSystem
 
         private void btnShoesSizes_Click(object sender, EventArgs e)
         {
+            lblSubject.Text = "Shoes Sizes";
             pnlDashboard.Controls.Clear();
             frmShoesSizes sizes = new frmShoesSizes
             {
                 TopLevel = false,
+                TopMost = true,
                 Dock = DockStyle.Fill
             };
             pnlDashboard.Controls.Add(sizes);
@@ -31,14 +33,30 @@ namespace winShoesStoreManagementSystem
 
         private void btnShoesColor_Click(object sender, EventArgs e)
         {
+            lblSubject.Text = "Shoes Colors";
             pnlDashboard.Controls.Clear();
             frmShoesColors colors = new frmShoesColors
             {
                 TopLevel = false,
+                TopMost = true,
                 Dock = DockStyle.Fill
             };
             pnlDashboard.Controls.Add(colors);
             colors.Show();
+        }
+
+        private void btnShoesStyles_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Shoes Styles";
+            pnlDashboard.Controls.Clear();
+            frmShoesStyles styles = new frmShoesStyles
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(styles);
+            styles.Show();
         }
     }
 }
