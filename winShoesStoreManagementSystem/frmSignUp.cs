@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmRegister : Form
+    public partial class frmSignUp : Form
     {
-        public frmRegister()
+        public frmSignUp()
         {
             InitializeComponent();
         }
 
-        private void gunaTextBox4_TextChanged(object sender, EventArgs e)
+        private void lblSignIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            frmLogin login = new frmLogin();
+            login.Show();
+            Hide();
         }
     }
 }

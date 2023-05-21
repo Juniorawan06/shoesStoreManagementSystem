@@ -51,17 +51,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fmrLogin.cs" />
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegister.cs">
+    <Compile Include="frmShoesColors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegister.Designer.cs">
-      <DependentUpon>frmRegister.cs</DependentUpon>
+    <Compile Include="frmShoesColors.Designer.cs">
+      <DependentUpon>frmShoesColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShoesStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShoesStyles.Designer.cs">
+      <DependentUpon>frmShoesStyles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShoesSizes.cs">
       <SubType>Form</SubType>
@@ -80,8 +93,14 @@
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegister.resx">
-      <DependentUpon>frmRegister.cs</DependentUpon>
+    <EmbeddedResource Include="frmShoesColors.resx">
+      <DependentUpon>frmShoesColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShoesStyles.resx">
+      <DependentUpon>frmShoesStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShoesSizes.resx">
       <DependentUpon>frmShoesSizes.cs</DependentUpon>
