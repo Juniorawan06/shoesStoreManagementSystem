@@ -17,10 +17,9 @@ namespace winShoesStoreManagementSystem
             InitializeComponent();
         }
 
-        private frmShoesSizes sizes;
-
         private void btnShoesSizes_Click(object sender, EventArgs e)
         {
+            pnlDashboard.Controls.Clear();
             frmShoesSizes sizes = new frmShoesSizes
             {
                 TopLevel = false,
@@ -32,7 +31,7 @@ namespace winShoesStoreManagementSystem
 
         private void btnShoesColor_Click(object sender, EventArgs e)
         {
-            pnlDashboard.Controls.Remove(sizes);
+            pnlDashboard.Controls.Clear();
             frmShoesColors colors = new frmShoesColors
             {
                 TopLevel = false,
