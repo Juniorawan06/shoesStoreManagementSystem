@@ -43,7 +43,7 @@
             // 
             this.lblShoesSizes.AutoSize = true;
             this.lblShoesSizes.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblShoesSizes.Location = new System.Drawing.Point(40, 14);
+            this.lblShoesSizes.Location = new System.Drawing.Point(82, 14);
             this.lblShoesSizes.Name = "lblShoesSizes";
             this.lblShoesSizes.Size = new System.Drawing.Size(182, 41);
             this.lblShoesSizes.TabIndex = 5;
@@ -61,7 +61,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(577, 116);
+            this.txtSearch.Location = new System.Drawing.Point(619, 116);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -99,7 +99,7 @@
             this.gvShoesColors.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvShoesColors.EnableHeadersVisualStyles = false;
             this.gvShoesColors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvShoesColors.Location = new System.Drawing.Point(47, 163);
+            this.gvShoesColors.Location = new System.Drawing.Point(89, 163);
             this.gvShoesColors.Margin = new System.Windows.Forms.Padding(4);
             this.gvShoesColors.Name = "gvShoesColors";
             this.gvShoesColors.RowHeadersVisible = false;
@@ -144,7 +144,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.Black;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(655, 22);
+            this.btnAddBulk.Location = new System.Drawing.Point(697, 22);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -171,7 +171,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.Black;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(505, 22);
+            this.btnAddItems.Location = new System.Drawing.Point(547, 22);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -188,13 +188,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 571);
+            this.ClientSize = new System.Drawing.Size(941, 539);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.gvShoesColors);
             this.Controls.Add(this.btnAddBulk);
             this.Controls.Add(this.btnAddItems);
             this.Controls.Add(this.lblShoesSizes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmShoesSizes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shoes Sizes";
             ((System.ComponentModel.ISupportInitialize)(this.gvShoesColors)).EndInit();
             this.ResumeLayout(false);
