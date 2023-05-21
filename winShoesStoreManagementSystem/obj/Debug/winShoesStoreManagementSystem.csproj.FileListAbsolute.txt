@@ -27,7 +27,6 @@ C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreMan
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.CopyComplete
 C:\Users\Chacha Tech\source\repos\winShoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmDashboard.resources
-C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmRegister.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.AssemblyReference.cache
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.csproj.SuggestedBindingRedirects.cache
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.exe
@@ -60,3 +59,6 @@ E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSys
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.pdb
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesColors.resources
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesStyles.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesColors.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesStyles.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmSignUp.resources
