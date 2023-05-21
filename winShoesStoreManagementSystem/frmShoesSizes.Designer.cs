@@ -29,73 +29,108 @@
         private void InitializeComponent()
         {
             this.lblShoesSizes = new System.Windows.Forms.Label();
-            this.lblEnterShoesSize = new System.Windows.Forms.Label();
+            this.gvShoesSizes = new System.Windows.Forms.DataGridView();
+            this.gunaBtnAddOne = new Guna.UI.WinForms.GunaButton();
+            this.gunaBtnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.txtShoeSize = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gvShoesSizes)).BeginInit();
             this.SuspendLayout();
             // 
             // lblShoesSizes
             // 
             this.lblShoesSizes.AutoSize = true;
             this.lblShoesSizes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShoesSizes.Location = new System.Drawing.Point(327, 146);
+            this.lblShoesSizes.Location = new System.Drawing.Point(324, 109);
             this.lblShoesSizes.Name = "lblShoesSizes";
             this.lblShoesSizes.Size = new System.Drawing.Size(192, 36);
             this.lblShoesSizes.TabIndex = 5;
             this.lblShoesSizes.Text = "Shoes Sizes";
             // 
-            // lblEnterShoesSize
+            // gvShoesSizes
             // 
-            this.lblEnterShoesSize.AutoSize = true;
-            this.lblEnterShoesSize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lblEnterShoesSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
-            this.lblEnterShoesSize.Location = new System.Drawing.Point(254, 270);
-            this.lblEnterShoesSize.Name = "lblEnterShoesSize";
-            this.lblEnterShoesSize.Size = new System.Drawing.Size(171, 24);
-            this.lblEnterShoesSize.TabIndex = 6;
-            this.lblEnterShoesSize.Text = "Enter Shoes Size";
+            this.gvShoesSizes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvShoesSizes.Location = new System.Drawing.Point(78, 228);
+            this.gvShoesSizes.Name = "gvShoesSizes";
+            this.gvShoesSizes.RowHeadersWidth = 51;
+            this.gvShoesSizes.RowTemplate.Height = 24;
+            this.gvShoesSizes.Size = new System.Drawing.Size(690, 59);
+            this.gvShoesSizes.TabIndex = 10;
+            // 
+            // gunaBtnAddOne
+            // 
+            this.gunaBtnAddOne.AnimationHoverSpeed = 0.07F;
+            this.gunaBtnAddOne.AnimationSpeed = 0.03F;
+            this.gunaBtnAddOne.BackColor = System.Drawing.Color.Transparent;
+            this.gunaBtnAddOne.BaseColor = System.Drawing.Color.White;
+            this.gunaBtnAddOne.BorderColor = System.Drawing.Color.Black;
+            this.gunaBtnAddOne.BorderSize = 1;
+            this.gunaBtnAddOne.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaBtnAddOne.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaBtnAddOne.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnAddOne.ForeColor = System.Drawing.Color.Black;
+            this.gunaBtnAddOne.Image = null;
+            this.gunaBtnAddOne.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaBtnAddOne.Location = new System.Drawing.Point(567, 12);
+            this.gunaBtnAddOne.Name = "gunaBtnAddOne";
+            this.gunaBtnAddOne.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaBtnAddOne.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaBtnAddOne.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaBtnAddOne.OnHoverImage = null;
+            this.gunaBtnAddOne.OnPressedColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gunaBtnAddOne.Radius = 15;
+            this.gunaBtnAddOne.Size = new System.Drawing.Size(124, 33);
+            this.gunaBtnAddOne.TabIndex = 15;
+            this.gunaBtnAddOne.Text = "Add One";
+            this.gunaBtnAddOne.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaBtnAddBulk
+            // 
+            this.gunaBtnAddBulk.AnimationHoverSpeed = 0.07F;
+            this.gunaBtnAddBulk.AnimationSpeed = 0.03F;
+            this.gunaBtnAddBulk.BackColor = System.Drawing.Color.Transparent;
+            this.gunaBtnAddBulk.BaseColor = System.Drawing.Color.White;
+            this.gunaBtnAddBulk.BorderColor = System.Drawing.Color.Black;
+            this.gunaBtnAddBulk.BorderSize = 1;
+            this.gunaBtnAddBulk.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaBtnAddBulk.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaBtnAddBulk.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnAddBulk.ForeColor = System.Drawing.Color.Black;
+            this.gunaBtnAddBulk.Image = null;
+            this.gunaBtnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaBtnAddBulk.Location = new System.Drawing.Point(717, 12);
+            this.gunaBtnAddBulk.Name = "gunaBtnAddBulk";
+            this.gunaBtnAddBulk.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaBtnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaBtnAddBulk.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaBtnAddBulk.OnHoverImage = null;
+            this.gunaBtnAddBulk.OnPressedColor = System.Drawing.SystemColors.ActiveBorder;
+            this.gunaBtnAddBulk.Radius = 15;
+            this.gunaBtnAddBulk.Size = new System.Drawing.Size(124, 33);
+            this.gunaBtnAddBulk.TabIndex = 16;
+            this.gunaBtnAddBulk.Text = "Add Bulk";
+            this.gunaBtnAddBulk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtShoeSize
             // 
-            this.txtShoeSize.Location = new System.Drawing.Point(458, 270);
+            this.txtShoeSize.Location = new System.Drawing.Point(543, 171);
             this.txtShoeSize.Multiline = true;
             this.txtShoeSize.Name = "txtShoeSize";
-            this.txtShoeSize.Size = new System.Drawing.Size(146, 28);
-            this.txtShoeSize.TabIndex = 7;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnCancel.Location = new System.Drawing.Point(601, 526);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(104, 33);
-            this.btnCancel.TabIndex = 8;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnNext.Location = new System.Drawing.Point(725, 526);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(104, 33);
-            this.btnNext.TabIndex = 9;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.txtShoeSize.Size = new System.Drawing.Size(225, 34);
+            this.txtShoeSize.TabIndex = 17;
             // 
             // frmShoesSizes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 571);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtShoeSize);
-            this.Controls.Add(this.lblEnterShoesSize);
+            this.Controls.Add(this.gunaBtnAddBulk);
+            this.Controls.Add(this.gunaBtnAddOne);
+            this.Controls.Add(this.gvShoesSizes);
             this.Controls.Add(this.lblShoesSizes);
             this.Name = "frmShoesSizes";
             this.Text = "Shoes Sizes";
+            ((System.ComponentModel.ISupportInitialize)(this.gvShoesSizes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,9 +139,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblShoesSizes;
-        private System.Windows.Forms.Label lblEnterShoesSize;
+        private System.Windows.Forms.DataGridView gvShoesSizes;
+        private Guna.UI.WinForms.GunaButton gunaBtnAddOne;
+        private Guna.UI.WinForms.GunaButton gunaBtnAddBulk;
         private System.Windows.Forms.TextBox txtShoeSize;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnNext;
     }
 }

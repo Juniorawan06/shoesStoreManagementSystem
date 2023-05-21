@@ -59,8 +59,11 @@ E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSys
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.pdb
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesColors.resources
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesStyles.resources
+<<<<<<< HEAD
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesColors.resources
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesStyles.resources
 C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmSignUp.resources
+=======
+>>>>>>> bddda00d843acf4c0dbc6e84261212416d9d9f46
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesColors.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmShoesStyles.resources
