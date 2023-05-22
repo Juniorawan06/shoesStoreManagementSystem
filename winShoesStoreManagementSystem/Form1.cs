@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class frmPurchases : Form
     {
-        public Form1()
+        public frmPurchases()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace winShoesStoreManagementSystem
 {
-    partial class Form1
+    partial class frmPurchases
     {
         /// <summary>
         /// Required designer variable.
@@ -106,15 +106,15 @@
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Form1
+            // frmPurchases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.gunaLabel1);
-            this.Name = "Form1";
-            this.Text = "frmPurchase";
+            this.Name = "frmPurchases";
+            this.Text = "Purchases";
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
