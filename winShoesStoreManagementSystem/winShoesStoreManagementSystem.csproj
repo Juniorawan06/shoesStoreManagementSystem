@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,11 +53,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="fmrLogin.cs" />
+    <Compile Include="fmrPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrPurchases.Designer.cs">
+      <DependentUpon>fmrPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddItems.Designer.cs">
+      <DependentUpon>frmAddItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnalytics.Designer.cs">
+      <DependentUpon>frmAnalytics.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmShoesColors.cs">
       <SubType>Form</SubType>
@@ -90,8 +121,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmrPurchases.resx">
+      <DependentUpon>fmrPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddItems.resx">
+      <DependentUpon>frmAddItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnalytics.resx">
+      <DependentUpon>frmAnalytics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShoesColors.resx">
       <DependentUpon>frmShoesColors.cs</DependentUpon>
