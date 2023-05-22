@@ -31,23 +31,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblShoesStyles = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.gvShoesColors = new Guna.UI.WinForms.GunaDataGridView();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gvShoesColors)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblShoesStyles
-            // 
-            this.lblShoesStyles.AutoSize = true;
-            this.lblShoesStyles.Font = new System.Drawing.Font("Segoe UI Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblShoesStyles.Location = new System.Drawing.Point(74, 14);
-            this.lblShoesStyles.Name = "lblShoesStyles";
-            this.lblShoesStyles.Size = new System.Drawing.Size(195, 41);
-            this.lblShoesStyles.TabIndex = 15;
-            this.lblShoesStyles.Text = "Shoes Styles";
             // 
             // txtSearch
             // 
@@ -144,7 +133,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.Black;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(689, 22);
+            this.btnAddBulk.Location = new System.Drawing.Point(232, 116);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -171,7 +160,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.Black;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(539, 22);
+            this.btnAddItems.Location = new System.Drawing.Point(82, 116);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -193,19 +182,17 @@
             this.Controls.Add(this.gvShoesColors);
             this.Controls.Add(this.btnAddBulk);
             this.Controls.Add(this.btnAddItems);
-            this.Controls.Add(this.lblShoesStyles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmShoesStyles";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shoes Styles";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.gvShoesColors)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lblShoesStyles;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView gvShoesColors;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
