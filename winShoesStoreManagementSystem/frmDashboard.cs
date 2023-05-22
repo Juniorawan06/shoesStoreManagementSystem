@@ -17,6 +17,19 @@ namespace winShoesStoreManagementSystem
             InitializeComponent();
         }
 
+        private void frmDashboard_Load(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Dashboard";
+            pnlDashboard.Controls.Clear();
+            frmAnalytics analytics = new frmAnalytics
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(analytics);
+            analytics.Show();
+        }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
            lblSubject.Text = "Dashboard";
