@@ -17,6 +17,20 @@ namespace winShoesStoreManagementSystem
             InitializeComponent();
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+           lblSubject.Text = "Dashboard";
+           pnlDashboard.Controls.Clear();
+           frmAnalytics analytics = new frmAnalytics
+           {
+               TopLevel = false,
+               TopMost = true,
+               Dock = DockStyle.Fill
+           };
+           pnlDashboard.Controls.Add(analytics);
+           analytics.Show();
+        }
+
         private void btnShoesSizes_Click(object sender, EventArgs e)
         {
             lblSubject.Text = "Shoes Sizes";
@@ -57,6 +71,48 @@ namespace winShoesStoreManagementSystem
             };
             pnlDashboard.Controls.Add(styles);
             styles.Show();
+        }
+
+        private void btnPurchases_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Purchases";
+            pnlDashboard.Controls.Clear();
+            frmPurchases purchase = new frmPurchases
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(purchase);
+            purchase.Show();
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Sales";
+            pnlDashboard.Controls.Clear();
+            frmSales sales = new frmSales
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(sales);
+            sales.Show();
+        }
+
+        private void btnAddItems_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Add Items";
+            pnlDashboard.Controls.Clear();
+            frmAddItems add = new frmAddItems
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(add);
+            add.Show();
         }
     }
 }
