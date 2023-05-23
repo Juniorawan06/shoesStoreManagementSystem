@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="fmrLogin.cs" />
+    <Compile Include="frmAddBulk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddBulk.Designer.cs">
+      <DependentUpon>frmAddBulk.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddBulk.resx">
+      <DependentUpon>frmAddBulk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddItems.resx">
       <DependentUpon>frmAddItems.cs</DependentUpon>
     </EmbeddedResource>

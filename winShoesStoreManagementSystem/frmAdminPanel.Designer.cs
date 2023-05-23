@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminPanel));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSale = new System.Windows.Forms.Button();
-            this.btnPurchases = new System.Windows.Forms.Button();
+            this.btnBrands = new System.Windows.Forms.Button();
             this.btnShoesStyles = new System.Windows.Forms.Button();
-            this.btnShoesColor = new System.Windows.Forms.Button();
+            this.btnPurchases = new System.Windows.Forms.Button();
             this.btnShoesSizes = new System.Windows.Forms.Button();
+            this.btnShoesColor = new System.Windows.Forms.Button();
             this.btnAddItems = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.btnBrands = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSale.Image = ((System.Drawing.Image)(resources.GetObject("btnSale.Image")));
             this.btnSale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSale.Location = new System.Drawing.Point(0, 538);
+            this.btnSale.Location = new System.Drawing.Point(0, 561);
             this.btnSale.Name = "btnSale";
             this.btnSale.Size = new System.Drawing.Size(238, 52);
             this.btnSale.TabIndex = 3;
@@ -88,21 +88,21 @@
             this.btnSale.UseVisualStyleBackColor = false;
             this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
-            // btnPurchases
+            // btnBrands
             // 
-            this.btnPurchases.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPurchases.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPurchases.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPurchases.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchases.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchases.Image")));
-            this.btnPurchases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchases.Location = new System.Drawing.Point(0, 382);
-            this.btnPurchases.Name = "btnPurchases";
-            this.btnPurchases.Size = new System.Drawing.Size(238, 52);
-            this.btnPurchases.TabIndex = 4;
-            this.btnPurchases.Text = "Purchases";
-            this.btnPurchases.UseVisualStyleBackColor = false;
-            this.btnPurchases.Click += new System.EventHandler(this.btnPurchases_Click);
+            this.btnBrands.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBrands.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrands.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrands.Image = ((System.Drawing.Image)(resources.GetObject("btnBrands.Image")));
+            this.btnBrands.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrands.Location = new System.Drawing.Point(0, 509);
+            this.btnBrands.Name = "btnBrands";
+            this.btnBrands.Size = new System.Drawing.Size(238, 52);
+            this.btnBrands.TabIndex = 7;
+            this.btnBrands.Text = "Brands";
+            this.btnBrands.UseVisualStyleBackColor = false;
+            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
             // 
             // btnShoesStyles
             // 
@@ -112,7 +112,7 @@
             this.btnShoesStyles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShoesStyles.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesStyles.Image")));
             this.btnShoesStyles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesStyles.Location = new System.Drawing.Point(0, 434);
+            this.btnShoesStyles.Location = new System.Drawing.Point(0, 457);
             this.btnShoesStyles.Name = "btnShoesStyles";
             this.btnShoesStyles.Size = new System.Drawing.Size(238, 52);
             this.btnShoesStyles.TabIndex = 6;
@@ -120,21 +120,21 @@
             this.btnShoesStyles.UseVisualStyleBackColor = false;
             this.btnShoesStyles.Click += new System.EventHandler(this.btnShoesStyles_Click);
             // 
-            // btnShoesColor
+            // btnPurchases
             // 
-            this.btnShoesColor.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnShoesColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShoesColor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnShoesColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShoesColor.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesColor.Image")));
-            this.btnShoesColor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesColor.Location = new System.Drawing.Point(0, 278);
-            this.btnShoesColor.Name = "btnShoesColor";
-            this.btnShoesColor.Size = new System.Drawing.Size(238, 52);
-            this.btnShoesColor.TabIndex = 2;
-            this.btnShoesColor.Text = "Shoes Colors";
-            this.btnShoesColor.UseVisualStyleBackColor = false;
-            this.btnShoesColor.Click += new System.EventHandler(this.btnShoesColor_Click);
+            this.btnPurchases.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPurchases.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPurchases.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPurchases.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchases.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchases.Image")));
+            this.btnPurchases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchases.Location = new System.Drawing.Point(0, 405);
+            this.btnPurchases.Name = "btnPurchases";
+            this.btnPurchases.Size = new System.Drawing.Size(238, 52);
+            this.btnPurchases.TabIndex = 4;
+            this.btnPurchases.Text = "Purchases";
+            this.btnPurchases.UseVisualStyleBackColor = false;
+            this.btnPurchases.Click += new System.EventHandler(this.btnPurchases_Click);
             // 
             // btnShoesSizes
             // 
@@ -145,13 +145,29 @@
             this.btnShoesSizes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShoesSizes.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesSizes.Image")));
             this.btnShoesSizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesSizes.Location = new System.Drawing.Point(0, 330);
+            this.btnShoesSizes.Location = new System.Drawing.Point(0, 353);
             this.btnShoesSizes.Name = "btnShoesSizes";
             this.btnShoesSizes.Size = new System.Drawing.Size(238, 52);
             this.btnShoesSizes.TabIndex = 1;
             this.btnShoesSizes.Text = "Shoes Sizes";
             this.btnShoesSizes.UseVisualStyleBackColor = false;
             this.btnShoesSizes.Click += new System.EventHandler(this.btnShoesSizes_Click);
+            // 
+            // btnShoesColor
+            // 
+            this.btnShoesColor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnShoesColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShoesColor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnShoesColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShoesColor.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesColor.Image")));
+            this.btnShoesColor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnShoesColor.Location = new System.Drawing.Point(0, 301);
+            this.btnShoesColor.Name = "btnShoesColor";
+            this.btnShoesColor.Size = new System.Drawing.Size(238, 52);
+            this.btnShoesColor.TabIndex = 2;
+            this.btnShoesColor.Text = "Shoes Colors";
+            this.btnShoesColor.UseVisualStyleBackColor = false;
+            this.btnShoesColor.Click += new System.EventHandler(this.btnShoesColor_Click);
             // 
             // btnAddItems
             // 
@@ -161,7 +177,7 @@
             this.btnAddItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItems.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItems.Image")));
             this.btnAddItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddItems.Location = new System.Drawing.Point(0, 226);
+            this.btnAddItems.Location = new System.Drawing.Point(0, 249);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.Size = new System.Drawing.Size(238, 52);
             this.btnAddItems.TabIndex = 6;
@@ -193,7 +209,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 174);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 197);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(238, 52);
             this.btnDashboard.TabIndex = 0;
@@ -209,14 +225,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 174);
+            this.panel3.Size = new System.Drawing.Size(238, 197);
             this.panel3.TabIndex = 0;
             // 
             // lblStoreName
             // 
             this.lblStoreName.AutoSize = true;
             this.lblStoreName.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblStoreName.Location = new System.Drawing.Point(50, 108);
+            this.lblStoreName.Location = new System.Drawing.Point(50, 135);
             this.lblStoreName.Name = "lblStoreName";
             this.lblStoreName.Size = new System.Drawing.Size(128, 28);
             this.lblStoreName.TabIndex = 0;
@@ -225,9 +241,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(62, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(127, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -296,22 +312,6 @@
             this.pnlDashboard.Name = "pnlDashboard";
             this.pnlDashboard.Size = new System.Drawing.Size(1569, 732);
             this.pnlDashboard.TabIndex = 2;
-            // 
-            // btnBrands
-            // 
-            this.btnBrands.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBrands.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBrands.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrands.Image = ((System.Drawing.Image)(resources.GetObject("btnBrands.Image")));
-            this.btnBrands.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrands.Location = new System.Drawing.Point(0, 486);
-            this.btnBrands.Name = "btnBrands";
-            this.btnBrands.Size = new System.Drawing.Size(238, 52);
-            this.btnBrands.TabIndex = 7;
-            this.btnBrands.Text = "Brands";
-            this.btnBrands.UseVisualStyleBackColor = false;
-            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
             // 
             // frmAdminPanel
             // 

@@ -84,3 +84,4 @@ C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManage
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAdminPanel.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmBrands.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmUserPanel.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAddBulk.resources

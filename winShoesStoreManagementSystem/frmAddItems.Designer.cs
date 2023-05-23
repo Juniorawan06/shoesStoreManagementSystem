@@ -50,7 +50,7 @@
             this.lblAddItems.BackColor = System.Drawing.Color.Transparent;
             this.lblAddItems.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lblAddItems.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblAddItems.Location = new System.Drawing.Point(8, 26);
+            this.lblAddItems.Location = new System.Drawing.Point(25, 27);
             this.lblAddItems.Name = "lblAddItems";
             this.lblAddItems.Size = new System.Drawing.Size(362, 37);
             this.lblAddItems.TabIndex = 1;
@@ -68,7 +68,7 @@
             this.txtBrand.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtBrand.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtBrand.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtBrand.Location = new System.Drawing.Point(7, 111);
+            this.txtBrand.Location = new System.Drawing.Point(24, 113);
             this.txtBrand.Margin = new System.Windows.Forms.Padding(4);
             this.txtBrand.Name = "txtBrand";
             this.txtBrand.PasswordChar = '\0';
@@ -82,7 +82,7 @@
             // 
             this.lblBrandName.AutoSize = true;
             this.lblBrandName.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblBrandName.Location = new System.Drawing.Point(11, 84);
+            this.lblBrandName.Location = new System.Drawing.Point(28, 86);
             this.lblBrandName.Name = "lblBrandName";
             this.lblBrandName.Size = new System.Drawing.Size(117, 23);
             this.lblBrandName.TabIndex = 9;
@@ -100,7 +100,7 @@
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox1.Location = new System.Drawing.Point(7, 200);
+            this.gunaTextBox1.Location = new System.Drawing.Point(24, 202);
             this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
@@ -114,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(11, 173);
+            this.label1.Location = new System.Drawing.Point(28, 175);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 23);
             this.label1.TabIndex = 9;
@@ -132,7 +132,7 @@
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox2.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox2.Location = new System.Drawing.Point(7, 289);
+            this.gunaTextBox2.Location = new System.Drawing.Point(24, 291);
             this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
@@ -146,11 +146,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(11, 262);
+            this.label2.Location = new System.Drawing.Point(28, 264);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 23);
+            this.label2.Size = new System.Drawing.Size(43, 23);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Sizes";
+            this.label2.Text = "Size";
             // 
             // gunaTextBox3
             // 
@@ -164,7 +164,7 @@
             this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox3.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox3.Location = new System.Drawing.Point(7, 385);
+            this.gunaTextBox3.Location = new System.Drawing.Point(24, 387);
             this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
@@ -178,11 +178,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(11, 358);
+            this.label3.Location = new System.Drawing.Point(28, 360);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 23);
+            this.label3.Size = new System.Drawing.Size(51, 23);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Styles";
+            this.label3.Text = "Style";
             // 
             // btnAdd
             // 
@@ -223,7 +223,7 @@
             this.txtCostPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCostPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtCostPrice.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCostPrice.Location = new System.Drawing.Point(8, 482);
+            this.txtCostPrice.Location = new System.Drawing.Point(25, 484);
             this.txtCostPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostPrice.Name = "txtCostPrice";
             this.txtCostPrice.PasswordChar = '\0';
@@ -237,7 +237,7 @@
             // 
             this.lblCostprice.AutoSize = true;
             this.lblCostprice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblCostprice.Location = new System.Drawing.Point(12, 455);
+            this.lblCostprice.Location = new System.Drawing.Point(29, 457);
             this.lblCostprice.Name = "lblCostprice";
             this.lblCostprice.Size = new System.Drawing.Size(91, 23);
             this.lblCostprice.TabIndex = 9;
@@ -255,7 +255,7 @@
             this.txtSellingPrices.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSellingPrices.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtSellingPrices.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSellingPrices.Location = new System.Drawing.Point(7, 579);
+            this.txtSellingPrices.Location = new System.Drawing.Point(24, 581);
             this.txtSellingPrices.Margin = new System.Windows.Forms.Padding(4);
             this.txtSellingPrices.Name = "txtSellingPrices";
             this.txtSellingPrices.PasswordChar = '\0';
@@ -269,7 +269,7 @@
             // 
             this.lblSellingPrice.AutoSize = true;
             this.lblSellingPrice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblSellingPrice.Location = new System.Drawing.Point(11, 552);
+            this.lblSellingPrice.Location = new System.Drawing.Point(28, 554);
             this.lblSellingPrice.Name = "lblSellingPrice";
             this.lblSellingPrice.Size = new System.Drawing.Size(111, 23);
             this.lblSellingPrice.TabIndex = 9;
