@@ -184,7 +184,7 @@
             // 
             this.btnAdd.AnimationHoverSpeed = 0.07F;
             this.btnAdd.AnimationSpeed = 0.03F;
-            this.btnAdd.BackColor = System.Drawing.Color.Blue;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.BaseColor = System.Drawing.Color.Blue;
             this.btnAdd.BorderColor = System.Drawing.Color.Black;
@@ -226,6 +226,7 @@
             this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.lblAddItems);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAddItems";
             this.Text = "frmAddItems";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
