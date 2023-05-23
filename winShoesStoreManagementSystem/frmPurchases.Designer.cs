@@ -1,6 +1,6 @@
 ﻿namespace winShoesStoreManagementSystem
 {
-    partial class frmSales
+    partial class frmPurchases
     {
         /// <summary>
         /// Required designer variable.
@@ -31,37 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.gvSales = new Guna.UI.WinForms.GunaDataGridView();
+            this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.salePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvSales)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearch.BaseColor = System.Drawing.Color.White;
-            this.txtSearch.BorderColor = System.Drawing.Color.Silver;
-            this.txtSearch.BorderSize = 1;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(613, 65);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.Radius = 8;
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(223, 33);
-            this.txtSearch.TabIndex = 35;
-            this.txtSearch.Text = "Search...";
             // 
             // gvSales
             // 
@@ -86,7 +64,7 @@
             this.shoeColor,
             this.shoeStyle,
             this.shoeSize,
-            this.salePrice});
+            this.purchasePrice});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -97,7 +75,7 @@
             this.gvSales.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvSales.EnableHeadersVisualStyles = false;
             this.gvSales.GridColor = System.Drawing.Color.White;
-            this.gvSales.Location = new System.Drawing.Point(50, 119);
+            this.gvSales.Location = new System.Drawing.Point(54, 109);
             this.gvSales.Name = "gvSales";
             this.gvSales.ReadOnly = true;
             this.gvSales.RowHeadersVisible = false;
@@ -105,7 +83,7 @@
             this.gvSales.RowTemplate.Height = 24;
             this.gvSales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvSales.Size = new System.Drawing.Size(815, 329);
-            this.gvSales.TabIndex = 36;
+            this.gvSales.TabIndex = 38;
             this.gvSales.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gvSales.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gvSales.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -128,6 +106,28 @@
             this.gvSales.ThemeStyle.RowsStyle.Height = 24;
             this.gvSales.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gvSales.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearch.BaseColor = System.Drawing.Color.White;
+            this.txtSearch.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearch.BorderSize = 1;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtSearch.Location = new System.Drawing.Point(617, 55);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.Radius = 8;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(223, 33);
+            this.txtSearch.TabIndex = 37;
+            this.txtSearch.Text = "Search...";
             // 
             // shoeId
             // 
@@ -157,36 +157,36 @@
             this.shoeSize.Name = "shoeSize";
             this.shoeSize.ReadOnly = true;
             // 
-            // salePrice
+            // purchasePrice
             // 
-            this.salePrice.HeaderText = "Sale Price";
-            this.salePrice.MinimumWidth = 6;
-            this.salePrice.Name = "salePrice";
-            this.salePrice.ReadOnly = true;
+            this.purchasePrice.HeaderText = "Cost Price";
+            this.purchasePrice.MinimumWidth = 6;
+            this.purchasePrice.Name = "purchasePrice";
+            this.purchasePrice.ReadOnly = true;
             // 
-            // frmSales
+            // frmPurchases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 539);
+            this.ClientSize = new System.Drawing.Size(923, 492);
             this.Controls.Add(this.gvSales);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmSales";
-            this.Text = "Sales";
+            this.Name = "frmPurchases";
+            this.Text = "frmPurchases";
             ((System.ComponentModel.ISupportInitialize)(this.gvSales)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaTextBox txtSearch;
+
         private Guna.UI.WinForms.GunaDataGridView gvSales;
+        private Guna.UI.WinForms.GunaTextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn salePrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purchasePrice;
     }
 }

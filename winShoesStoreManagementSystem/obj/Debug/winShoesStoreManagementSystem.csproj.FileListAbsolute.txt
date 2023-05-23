@@ -75,3 +75,9 @@ C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManage
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmSales.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAnalytics.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAddItems.resources
+E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmPurchases.resources
+E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAddItems.resources
+E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmAnalytics.resources
+E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmSales.resources
+E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmInvoice.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmInvoice.resources
