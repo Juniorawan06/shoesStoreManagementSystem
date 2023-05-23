@@ -19,7 +19,7 @@ namespace winShoesStoreManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmDashboard d = new frmDashboard();
+            frmAdminPanel d = new frmAdminPanel();
             d.Show();
             Hide();
         }
