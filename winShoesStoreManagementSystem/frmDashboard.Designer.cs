@@ -181,6 +181,7 @@
             this.btnLogOut.TabIndex = 5;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnDashboard
             // 
@@ -288,20 +289,19 @@
             // 
             // pnlDashboard
             // 
-            this.pnlDashboard.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDashboard.Location = new System.Drawing.Point(238, 0);
+            this.pnlDashboard.Location = new System.Drawing.Point(238, 80);
             this.pnlDashboard.Name = "pnlDashboard";
-            this.pnlDashboard.Size = new System.Drawing.Size(992, 693);
-            this.pnlDashboard.TabIndex = 0;
+            this.pnlDashboard.Size = new System.Drawing.Size(992, 613);
+            this.pnlDashboard.TabIndex = 2;
             // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 693);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDashboard);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -323,7 +323,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel pnlDashboard;
         private System.Windows.Forms.Label lblStoreName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnDashboard;
@@ -337,5 +336,6 @@
         private System.Windows.Forms.Label lblSubject;
         private System.Windows.Forms.Button btnShoesStyles;
         private System.Windows.Forms.Button btnAddItems;
+        private System.Windows.Forms.Panel pnlDashboard;
     }
 }

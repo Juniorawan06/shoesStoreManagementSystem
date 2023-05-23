@@ -127,5 +127,12 @@ namespace winShoesStoreManagementSystem
             pnlDashboard.Controls.Add(add);
             add.Show();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmLogin login = new frmLogin();
+            login.Show();
+        }
     }
 }
