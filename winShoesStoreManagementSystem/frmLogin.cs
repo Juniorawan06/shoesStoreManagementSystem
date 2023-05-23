@@ -19,9 +19,18 @@ namespace winShoesStoreManagementSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmAdminPanel d = new frmAdminPanel();
-            d.Show();
-            Hide();
+            if (txtUserName.Text == "admin")
+            {
+                frmAdminPanel adminPanel = new frmAdminPanel();
+                adminPanel.Show();
+                Hide();
+            }
+            else if(txtUserName.Text == "user")
+            {
+                frmUserPanel userPanel = new frmUserPanel();
+                userPanel.Show();
+                Hide();
+            }
         }
 
         private void lblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

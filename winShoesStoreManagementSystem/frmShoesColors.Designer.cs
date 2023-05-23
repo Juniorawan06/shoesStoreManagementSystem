@@ -203,6 +203,7 @@
             this.btnAddItems.TabIndex = 36;
             this.btnAddItems.Text = "+Add Items";
             this.btnAddItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddItems.Click += new System.EventHandler(this.btnAddItems_Click);
             // 
             // frmShoesColors
             // 

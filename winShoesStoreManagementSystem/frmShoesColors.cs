@@ -16,5 +16,19 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private void btnAddItems_Click(object sender, EventArgs e)
+        {
+            //lblSubject.Text = "Add Items";
+            //pnlDashboard.Controls.Clear();
+            frmAddItems items = new frmAddItems
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            //pnlDashboard.Controls.Add(items);
+            items.Show();
+        }
     }
 }
