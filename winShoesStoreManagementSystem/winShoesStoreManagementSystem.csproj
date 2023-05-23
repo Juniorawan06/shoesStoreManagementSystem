@@ -53,12 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="fmrLogin.cs" />
-    <Compile Include="fmrPurchases.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmrPurchases.Designer.cs">
-      <DependentUpon>fmrPurchases.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmAddItems.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +70,18 @@
     </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchases.Designer.cs">
+      <DependentUpon>frmPurchases.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSales.cs">
       <SubType>Form</SubType>
@@ -115,9 +121,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fmrPurchases.resx">
-      <DependentUpon>fmrPurchases.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmAddItems.resx">
       <DependentUpon>frmAddItems.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchases.resx">
+      <DependentUpon>frmPurchases.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSales.resx">
       <DependentUpon>frmSales.cs</DependentUpon>
