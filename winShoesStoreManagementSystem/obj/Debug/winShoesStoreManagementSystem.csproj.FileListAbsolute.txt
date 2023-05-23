@@ -71,3 +71,4 @@ C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagemen
 >>>>>>> 1043799287c35f7ccbc97a53b3353e8f7a633756
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.Form1.resources
 C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.fmrPurchases.resources
+C:\Users\AL-MALAK\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.fmrPurchases.resources
