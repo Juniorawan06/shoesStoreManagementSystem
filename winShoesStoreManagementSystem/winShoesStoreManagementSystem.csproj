@@ -65,11 +65,17 @@
     <Compile Include="frmAnalytics.Designer.cs">
       <DependentUpon>frmAnalytics.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDashboard.cs">
+    <Compile Include="frmAdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDashboard.Designer.cs">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <Compile Include="frmAdminPanel.Designer.cs">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrands.Designer.cs">
+      <DependentUpon>frmBrands.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInvoice.cs">
       <SubType>Form</SubType>
@@ -119,6 +125,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPanel.Designer.cs">
+      <DependentUpon>frmUserPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddItems.resx">
@@ -127,8 +139,11 @@
     <EmbeddedResource Include="frmAnalytics.resx">
       <DependentUpon>frmAnalytics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDashboard.resx">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="frmAdminPanel.resx">
+      <DependentUpon>frmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBrands.resx">
+      <DependentUpon>frmBrands.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInvoice.resx">
       <DependentUpon>frmInvoice.cs</DependentUpon>
@@ -153,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPanel.resx">
+      <DependentUpon>frmUserPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

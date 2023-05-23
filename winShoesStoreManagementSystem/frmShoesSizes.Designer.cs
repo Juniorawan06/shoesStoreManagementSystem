@@ -32,12 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
-            this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.gvShoeSizes = new Guna.UI.WinForms.GunaDataGridView();
             this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddItems = new Guna.UI.WinForms.GunaButton();
+            this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gvShoeSizes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(619, 116);
+            this.txtSearch.Location = new System.Drawing.Point(1247, 116);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -62,60 +62,6 @@
             this.txtSearch.Size = new System.Drawing.Size(223, 33);
             this.txtSearch.TabIndex = 29;
             this.txtSearch.Text = "Search...";
-            // 
-            // btnAddBulk
-            // 
-            this.btnAddBulk.AnimationHoverSpeed = 0.07F;
-            this.btnAddBulk.AnimationSpeed = 0.03F;
-            this.btnAddBulk.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddBulk.BaseColor = System.Drawing.Color.White;
-            this.btnAddBulk.BorderColor = System.Drawing.Color.Black;
-            this.btnAddBulk.BorderSize = 1;
-            this.btnAddBulk.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddBulk.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddBulk.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddBulk.ForeColor = System.Drawing.Color.Black;
-            this.btnAddBulk.Image = null;
-            this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(242, 116);
-            this.btnAddBulk.Name = "btnAddBulk";
-            this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAddBulk.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAddBulk.OnHoverImage = null;
-            this.btnAddBulk.OnPressedColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnAddBulk.Radius = 5;
-            this.btnAddBulk.Size = new System.Drawing.Size(148, 33);
-            this.btnAddBulk.TabIndex = 27;
-            this.btnAddBulk.Text = "+ Add Bulk";
-            this.btnAddBulk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnAddItems
-            // 
-            this.btnAddItems.AnimationHoverSpeed = 0.07F;
-            this.btnAddItems.AnimationSpeed = 0.03F;
-            this.btnAddItems.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddItems.BaseColor = System.Drawing.Color.White;
-            this.btnAddItems.BorderColor = System.Drawing.Color.Black;
-            this.btnAddItems.BorderSize = 1;
-            this.btnAddItems.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddItems.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddItems.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddItems.ForeColor = System.Drawing.Color.Black;
-            this.btnAddItems.Image = null;
-            this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(92, 116);
-            this.btnAddItems.Name = "btnAddItems";
-            this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAddItems.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAddItems.OnHoverImage = null;
-            this.btnAddItems.OnPressedColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnAddItems.Radius = 5;
-            this.btnAddItems.Size = new System.Drawing.Size(144, 33);
-            this.btnAddItems.TabIndex = 26;
-            this.btnAddItems.Text = "+ Add Items";
-            this.btnAddItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gvShoeSizes
             // 
@@ -156,7 +102,7 @@
             this.gvShoeSizes.RowHeadersWidth = 51;
             this.gvShoeSizes.RowTemplate.Height = 24;
             this.gvShoeSizes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvShoeSizes.Size = new System.Drawing.Size(750, 293);
+            this.gvShoeSizes.Size = new System.Drawing.Size(1378, 473);
             this.gvShoeSizes.TabIndex = 30;
             this.gvShoeSizes.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gvShoeSizes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -202,15 +148,71 @@
             this.shoeSize.Name = "shoeSize";
             this.shoeSize.ReadOnly = true;
             // 
+            // btnAddItems
+            // 
+            this.btnAddItems.AnimationHoverSpeed = 0.07F;
+            this.btnAddItems.AnimationSpeed = 0.03F;
+            this.btnAddItems.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddItems.BaseColor = System.Drawing.Color.Gray;
+            this.btnAddItems.BorderColor = System.Drawing.Color.Black;
+            this.btnAddItems.BorderSize = 1;
+            this.btnAddItems.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddItems.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddItems.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddItems.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAddItems.ForeColor = System.Drawing.Color.White;
+            this.btnAddItems.Image = null;
+            this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAddItems.Location = new System.Drawing.Point(92, 116);
+            this.btnAddItems.Name = "btnAddItems";
+            this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAddItems.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddItems.OnHoverImage = null;
+            this.btnAddItems.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAddItems.Radius = 10;
+            this.btnAddItems.Size = new System.Drawing.Size(125, 42);
+            this.btnAddItems.TabIndex = 38;
+            this.btnAddItems.Text = "+Add Items";
+            this.btnAddItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnAddBulk
+            // 
+            this.btnAddBulk.AnimationHoverSpeed = 0.07F;
+            this.btnAddBulk.AnimationSpeed = 0.03F;
+            this.btnAddBulk.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddBulk.BaseColor = System.Drawing.Color.Gray;
+            this.btnAddBulk.BorderColor = System.Drawing.Color.Black;
+            this.btnAddBulk.BorderSize = 1;
+            this.btnAddBulk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddBulk.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddBulk.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddBulk.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btnAddBulk.ForeColor = System.Drawing.Color.White;
+            this.btnAddBulk.Image = null;
+            this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAddBulk.Location = new System.Drawing.Point(233, 116);
+            this.btnAddBulk.Name = "btnAddBulk";
+            this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAddBulk.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddBulk.OnHoverImage = null;
+            this.btnAddBulk.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAddBulk.Radius = 10;
+            this.btnAddBulk.Size = new System.Drawing.Size(127, 42);
+            this.btnAddBulk.TabIndex = 39;
+            this.btnAddBulk.Text = "+Add Bulk";
+            this.btnAddBulk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmShoesSizes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 539);
+            this.ClientSize = new System.Drawing.Size(1569, 732);
+            this.Controls.Add(this.btnAddItems);
+            this.Controls.Add(this.btnAddBulk);
             this.Controls.Add(this.gvShoeSizes);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.btnAddBulk);
-            this.Controls.Add(this.btnAddItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmShoesSizes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -223,11 +225,11 @@
 
         #endregion
         private Guna.UI.WinForms.GunaTextBox txtSearch;
-        private Guna.UI.WinForms.GunaButton btnAddBulk;
-        private Guna.UI.WinForms.GunaButton btnAddItems;
         private Guna.UI.WinForms.GunaDataGridView gvShoeSizes;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
+        private Guna.UI.WinForms.GunaButton btnAddItems;
+        private Guna.UI.WinForms.GunaButton btnAddBulk;
     }
 }

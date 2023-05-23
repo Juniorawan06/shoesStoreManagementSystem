@@ -53,7 +53,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(613, 65);
+            this.txtSearch.Location = new System.Drawing.Point(1271, 105);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -97,14 +97,14 @@
             this.gvSales.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvSales.EnableHeadersVisualStyles = false;
             this.gvSales.GridColor = System.Drawing.Color.White;
-            this.gvSales.Location = new System.Drawing.Point(50, 119);
+            this.gvSales.Location = new System.Drawing.Point(63, 155);
             this.gvSales.Name = "gvSales";
             this.gvSales.ReadOnly = true;
             this.gvSales.RowHeadersVisible = false;
             this.gvSales.RowHeadersWidth = 51;
             this.gvSales.RowTemplate.Height = 24;
             this.gvSales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvSales.Size = new System.Drawing.Size(815, 329);
+            this.gvSales.Size = new System.Drawing.Size(1431, 508);
             this.gvSales.TabIndex = 36;
             this.gvSales.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gvSales.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -168,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 539);
+            this.ClientSize = new System.Drawing.Size(1569, 732);
             this.Controls.Add(this.gvSales);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

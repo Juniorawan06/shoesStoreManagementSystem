@@ -1,6 +1,6 @@
 ﻿namespace winShoesStoreManagementSystem
 {
-    partial class frmDashboard
+    partial class frmAdminPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminPanel));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSale = new System.Windows.Forms.Button();
             this.btnPurchases = new System.Windows.Forms.Button();
@@ -46,6 +46,7 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.btnBrands = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,10 +57,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.btnSale);
-            this.panel1.Controls.Add(this.btnPurchases);
+            this.panel1.Controls.Add(this.btnBrands);
             this.panel1.Controls.Add(this.btnShoesStyles);
-            this.panel1.Controls.Add(this.btnShoesColor);
+            this.panel1.Controls.Add(this.btnPurchases);
             this.panel1.Controls.Add(this.btnShoesSizes);
+            this.panel1.Controls.Add(this.btnShoesColor);
             this.panel1.Controls.Add(this.btnAddItems);
             this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnDashboard);
@@ -67,7 +69,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(238, 693);
+            this.panel1.Size = new System.Drawing.Size(238, 812);
             this.panel1.TabIndex = 0;
             // 
             // btnSale
@@ -78,7 +80,7 @@
             this.btnSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSale.Image = ((System.Drawing.Image)(resources.GetObject("btnSale.Image")));
             this.btnSale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSale.Location = new System.Drawing.Point(0, 440);
+            this.btnSale.Location = new System.Drawing.Point(0, 538);
             this.btnSale.Name = "btnSale";
             this.btnSale.Size = new System.Drawing.Size(238, 52);
             this.btnSale.TabIndex = 3;
@@ -94,7 +96,7 @@
             this.btnPurchases.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchases.Image = ((System.Drawing.Image)(resources.GetObject("btnPurchases.Image")));
             this.btnPurchases.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPurchases.Location = new System.Drawing.Point(0, 388);
+            this.btnPurchases.Location = new System.Drawing.Point(0, 382);
             this.btnPurchases.Name = "btnPurchases";
             this.btnPurchases.Size = new System.Drawing.Size(238, 52);
             this.btnPurchases.TabIndex = 4;
@@ -110,7 +112,7 @@
             this.btnShoesStyles.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShoesStyles.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesStyles.Image")));
             this.btnShoesStyles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesStyles.Location = new System.Drawing.Point(0, 336);
+            this.btnShoesStyles.Location = new System.Drawing.Point(0, 434);
             this.btnShoesStyles.Name = "btnShoesStyles";
             this.btnShoesStyles.Size = new System.Drawing.Size(238, 52);
             this.btnShoesStyles.TabIndex = 6;
@@ -126,7 +128,7 @@
             this.btnShoesColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShoesColor.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesColor.Image")));
             this.btnShoesColor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesColor.Location = new System.Drawing.Point(0, 284);
+            this.btnShoesColor.Location = new System.Drawing.Point(0, 278);
             this.btnShoesColor.Name = "btnShoesColor";
             this.btnShoesColor.Size = new System.Drawing.Size(238, 52);
             this.btnShoesColor.TabIndex = 2;
@@ -143,7 +145,7 @@
             this.btnShoesSizes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShoesSizes.Image = ((System.Drawing.Image)(resources.GetObject("btnShoesSizes.Image")));
             this.btnShoesSizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShoesSizes.Location = new System.Drawing.Point(0, 232);
+            this.btnShoesSizes.Location = new System.Drawing.Point(0, 330);
             this.btnShoesSizes.Name = "btnShoesSizes";
             this.btnShoesSizes.Size = new System.Drawing.Size(238, 52);
             this.btnShoesSizes.TabIndex = 1;
@@ -159,7 +161,7 @@
             this.btnAddItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItems.Image = ((System.Drawing.Image)(resources.GetObject("btnAddItems.Image")));
             this.btnAddItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddItems.Location = new System.Drawing.Point(0, 180);
+            this.btnAddItems.Location = new System.Drawing.Point(0, 226);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.Size = new System.Drawing.Size(238, 52);
             this.btnAddItems.TabIndex = 6;
@@ -175,7 +177,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 641);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 760);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(238, 52);
             this.btnLogOut.TabIndex = 5;
@@ -191,7 +193,7 @@
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 128);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 174);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(238, 52);
             this.btnDashboard.TabIndex = 0;
@@ -207,14 +209,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 128);
+            this.panel3.Size = new System.Drawing.Size(238, 174);
             this.panel3.TabIndex = 0;
             // 
             // lblStoreName
             // 
             this.lblStoreName.AutoSize = true;
             this.lblStoreName.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblStoreName.Location = new System.Drawing.Point(51, 94);
+            this.lblStoreName.Location = new System.Drawing.Point(50, 108);
             this.lblStoreName.Name = "lblStoreName";
             this.lblStoreName.Size = new System.Drawing.Size(128, 28);
             this.lblStoreName.TabIndex = 0;
@@ -223,7 +225,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(63, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(62, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -239,7 +241,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(238, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(992, 80);
+            this.panel2.Size = new System.Drawing.Size(1569, 80);
             this.panel2.TabIndex = 1;
             // 
             // lblUsername
@@ -247,7 +249,7 @@
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblUsername.Location = new System.Drawing.Point(802, 17);
+            this.lblUsername.Location = new System.Drawing.Point(1323, 17);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(152, 37);
             this.lblUsername.TabIndex = 0;
@@ -277,13 +279,13 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.Location = new System.Drawing.Point(332, 13);
+            this.txtSearch.Location = new System.Drawing.Point(332, 17);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.Radius = 5;
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(355, 41);
+            this.txtSearch.Size = new System.Drawing.Size(883, 41);
             this.txtSearch.TabIndex = 7;
             this.txtSearch.Text = "Search...";
             // 
@@ -292,18 +294,35 @@
             this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDashboard.Location = new System.Drawing.Point(238, 80);
             this.pnlDashboard.Name = "pnlDashboard";
-            this.pnlDashboard.Size = new System.Drawing.Size(992, 613);
+            this.pnlDashboard.Size = new System.Drawing.Size(1569, 732);
             this.pnlDashboard.TabIndex = 2;
             // 
-            // frmDashboard
+            // btnBrands
+            // 
+            this.btnBrands.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBrands.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrands.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrands.Image = ((System.Drawing.Image)(resources.GetObject("btnBrands.Image")));
+            this.btnBrands.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrands.Location = new System.Drawing.Point(0, 486);
+            this.btnBrands.Name = "btnBrands";
+            this.btnBrands.Size = new System.Drawing.Size(238, 52);
+            this.btnBrands.TabIndex = 7;
+            this.btnBrands.Text = "Brands";
+            this.btnBrands.UseVisualStyleBackColor = false;
+            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
+            // 
+            // frmAdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1230, 693);
+            this.ClientSize = new System.Drawing.Size(1807, 812);
             this.Controls.Add(this.pnlDashboard);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "frmDashboard";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "frmAdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -337,5 +356,6 @@
         private System.Windows.Forms.Button btnShoesStyles;
         private System.Windows.Forms.Button btnAddItems;
         private System.Windows.Forms.Panel pnlDashboard;
+        private System.Windows.Forms.Button btnBrands;
     }
 }

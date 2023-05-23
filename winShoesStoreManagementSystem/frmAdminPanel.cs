@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmDashboard : Form
+    public partial class frmAdminPanel : Form
     {
-        public frmDashboard()
+        public frmAdminPanel()
         {
             InitializeComponent();
         }
@@ -20,7 +20,6 @@ namespace winShoesStoreManagementSystem
         private void frmDashboard_Load(object sender, EventArgs e)
         {
             lblSubject.Text = "Dashboard";
-            pnlDashboard.Controls.Clear();
             frmAnalytics analytics = new frmAnalytics
             {
                 TopLevel = false,
@@ -118,14 +117,28 @@ namespace winShoesStoreManagementSystem
         {
             lblSubject.Text = "Add Items";
             pnlDashboard.Controls.Clear();
-            frmAddItems add = new frmAddItems
+            frmAddItems items = new frmAddItems
             {
                 TopLevel = false,
                 TopMost = true,
                 Dock = DockStyle.Fill
             };
-            pnlDashboard.Controls.Add(add);
-            add.Show();
+            pnlDashboard.Controls.Add(items);
+            items.Show();
+        }
+
+        private void btnBrands_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Brands";
+            pnlDashboard.Controls.Clear();
+            frmBrands brands = new frmBrands
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(brands);
+            brands.Show();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

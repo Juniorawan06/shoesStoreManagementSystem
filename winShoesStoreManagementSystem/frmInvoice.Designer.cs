@@ -59,7 +59,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvInvoice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvInvoice.ColumnHeadersHeight = 27;
             this.gvInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.shoeId,
             this.shoeColor,
@@ -76,14 +76,14 @@
             this.gvInvoice.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvInvoice.EnableHeadersVisualStyles = false;
             this.gvInvoice.GridColor = System.Drawing.Color.White;
-            this.gvInvoice.Location = new System.Drawing.Point(36, 114);
+            this.gvInvoice.Location = new System.Drawing.Point(67, 114);
             this.gvInvoice.Name = "gvInvoice";
             this.gvInvoice.ReadOnly = true;
             this.gvInvoice.RowHeadersVisible = false;
             this.gvInvoice.RowHeadersWidth = 51;
             this.gvInvoice.RowTemplate.Height = 24;
             this.gvInvoice.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvInvoice.Size = new System.Drawing.Size(815, 329);
+            this.gvInvoice.Size = new System.Drawing.Size(1424, 329);
             this.gvInvoice.TabIndex = 6;
             this.gvInvoice.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gvInvoice.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -97,7 +97,7 @@
             this.gvInvoice.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gvInvoice.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gvInvoice.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvInvoice.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gvInvoice.ThemeStyle.HeaderStyle.Height = 27;
             this.gvInvoice.ThemeStyle.ReadOnly = true;
             this.gvInvoice.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -157,7 +157,7 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = null;
             this.btnCancel.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancel.Location = new System.Drawing.Point(493, 485);
+            this.btnCancel.Location = new System.Drawing.Point(1144, 482);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnCancel.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -184,7 +184,7 @@
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
             this.btnConfirm.Image = null;
             this.btnConfirm.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnConfirm.Location = new System.Drawing.Point(680, 485);
+            this.btnConfirm.Location = new System.Drawing.Point(1331, 482);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnConfirm.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 544);
+            this.ClientSize = new System.Drawing.Size(1569, 732);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.gvInvoice);
