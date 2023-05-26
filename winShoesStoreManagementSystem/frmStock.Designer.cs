@@ -334,7 +334,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmStock";
-            this.Text = "Stock";
+            this.Text = "~";
             ((System.ComponentModel.ISupportInitialize)(this.gvStock)).EndInit();
             this.ResumeLayout(false);
 
