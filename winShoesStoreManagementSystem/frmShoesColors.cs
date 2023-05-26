@@ -27,7 +27,7 @@ namespace winShoesStoreManagementSystem
                 TopMost = true,
                 Dock = DockStyle.Fill
             };
-            //pnlDashboard.Controls.Add(items);
+            //pnlDashboard.Controls.Add(items); 
             items.Show();
         }
     }

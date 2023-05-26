@@ -42,6 +42,8 @@
             this.lblCostprice = new System.Windows.Forms.Label();
             this.txtSellingPrices = new Guna.UI.WinForms.GunaTextBox();
             this.lblSellingPrice = new System.Windows.Forms.Label();
+            this.txtCategory = new Guna.UI.WinForms.GunaTextBox();
+            this.lblCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAddItems
@@ -100,7 +102,7 @@
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox1.Location = new System.Drawing.Point(24, 202);
+            this.gunaTextBox1.Location = new System.Drawing.Point(24, 300);
             this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
@@ -114,7 +116,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(28, 175);
+            this.label1.Location = new System.Drawing.Point(28, 273);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 23);
             this.label1.TabIndex = 9;
@@ -132,7 +134,7 @@
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox2.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox2.Location = new System.Drawing.Point(24, 291);
+            this.gunaTextBox2.Location = new System.Drawing.Point(24, 389);
             this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
@@ -146,7 +148,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(28, 264);
+            this.label2.Location = new System.Drawing.Point(28, 362);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 23);
             this.label2.TabIndex = 9;
@@ -164,7 +166,7 @@
             this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gunaTextBox3.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox3.Location = new System.Drawing.Point(24, 387);
+            this.gunaTextBox3.Location = new System.Drawing.Point(24, 485);
             this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
@@ -178,7 +180,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(28, 360);
+            this.label3.Location = new System.Drawing.Point(28, 458);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 23);
             this.label3.TabIndex = 9;
@@ -198,7 +200,7 @@
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Image = null;
             this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAdd.Location = new System.Drawing.Point(703, 663);
+            this.btnAdd.Location = new System.Drawing.Point(703, 761);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -223,7 +225,7 @@
             this.txtCostPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCostPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtCostPrice.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCostPrice.Location = new System.Drawing.Point(25, 484);
+            this.txtCostPrice.Location = new System.Drawing.Point(25, 582);
             this.txtCostPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtCostPrice.Name = "txtCostPrice";
             this.txtCostPrice.PasswordChar = '\0';
@@ -237,7 +239,7 @@
             // 
             this.lblCostprice.AutoSize = true;
             this.lblCostprice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblCostprice.Location = new System.Drawing.Point(29, 457);
+            this.lblCostprice.Location = new System.Drawing.Point(29, 555);
             this.lblCostprice.Name = "lblCostprice";
             this.lblCostprice.Size = new System.Drawing.Size(91, 23);
             this.lblCostprice.TabIndex = 9;
@@ -255,7 +257,7 @@
             this.txtSellingPrices.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSellingPrices.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.txtSellingPrices.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSellingPrices.Location = new System.Drawing.Point(24, 581);
+            this.txtSellingPrices.Location = new System.Drawing.Point(24, 679);
             this.txtSellingPrices.Margin = new System.Windows.Forms.Padding(4);
             this.txtSellingPrices.Name = "txtSellingPrices";
             this.txtSellingPrices.PasswordChar = '\0';
@@ -269,29 +271,63 @@
             // 
             this.lblSellingPrice.AutoSize = true;
             this.lblSellingPrice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblSellingPrice.Location = new System.Drawing.Point(28, 554);
+            this.lblSellingPrice.Location = new System.Drawing.Point(28, 652);
             this.lblSellingPrice.Name = "lblSellingPrice";
             this.lblSellingPrice.Size = new System.Drawing.Size(111, 23);
             this.lblSellingPrice.TabIndex = 9;
             this.lblSellingPrice.Text = "Selling Price";
+            // 
+            // txtCategory
+            // 
+            this.txtCategory.BackColor = System.Drawing.Color.Transparent;
+            this.txtCategory.BaseColor = System.Drawing.Color.White;
+            this.txtCategory.BorderColor = System.Drawing.Color.Transparent;
+            this.txtCategory.BorderSize = 1;
+            this.txtCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategory.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtCategory.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCategory.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtCategory.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtCategory.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCategory.Location = new System.Drawing.Point(24, 210);
+            this.txtCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.PasswordChar = '\0';
+            this.txtCategory.Radius = 5;
+            this.txtCategory.SelectedText = "";
+            this.txtCategory.Size = new System.Drawing.Size(1504, 41);
+            this.txtCategory.TabIndex = 8;
+            this.txtCategory.Text = "Category";
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
+            this.lblCategory.Location = new System.Drawing.Point(28, 183);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(86, 23);
+            this.lblCategory.TabIndex = 9;
+            this.lblCategory.Text = "Category";
             // 
             // frmAddItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1569, 732);
+            this.ClientSize = new System.Drawing.Size(1569, 879);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblSellingPrice);
             this.Controls.Add(this.lblCostprice);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblBrandName);
             this.Controls.Add(this.txtSellingPrices);
             this.Controls.Add(this.txtCostPrice);
             this.Controls.Add(this.gunaTextBox3);
             this.Controls.Add(this.gunaTextBox2);
+            this.Controls.Add(this.txtCategory);
             this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.lblAddItems);
@@ -320,5 +356,7 @@
         private System.Windows.Forms.Label lblCostprice;
         private Guna.UI.WinForms.GunaTextBox txtSellingPrices;
         private System.Windows.Forms.Label lblSellingPrice;
+        private Guna.UI.WinForms.GunaTextBox txtCategory;
+        private System.Windows.Forms.Label lblCategory;
     }
 }

@@ -232,11 +232,11 @@
             // 
             this.lblStoreName.AutoSize = true;
             this.lblStoreName.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblStoreName.Location = new System.Drawing.Point(50, 135);
+            this.lblStoreName.Location = new System.Drawing.Point(61, 147);
             this.lblStoreName.Name = "lblStoreName";
-            this.lblStoreName.Size = new System.Drawing.Size(128, 28);
+            this.lblStoreName.Size = new System.Drawing.Size(115, 28);
             this.lblStoreName.TabIndex = 0;
-            this.lblStoreName.Text = "Store Name";
+            this.lblStoreName.Text = "Shoe Store";
             // 
             // pictureBox1
             // 

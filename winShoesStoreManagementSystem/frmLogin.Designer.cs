@@ -220,7 +220,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 574);
+            this.panel1.Size = new System.Drawing.Size(326, 574);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox3
@@ -240,11 +240,11 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(57, 46);
+            this.label1.Location = new System.Drawing.Point(12, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 27);
+            this.label1.Size = new System.Drawing.Size(298, 27);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PROJECT NAME";
+            this.label1.Text = "Shoes Store Management";
             // 
             // label2
             // 

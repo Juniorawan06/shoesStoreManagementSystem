@@ -32,12 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gvShoeColors = new Guna.UI.WinForms.GunaDataGridView();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
+            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvShoeColors)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,27 +64,6 @@
             this.txtSearch.TabIndex = 25;
             this.txtSearch.Text = "Search...";
             // 
-            // shoeColor
-            // 
-            this.shoeColor.HeaderText = "Shoe Color";
-            this.shoeColor.MinimumWidth = 6;
-            this.shoeColor.Name = "shoeColor";
-            this.shoeColor.ReadOnly = true;
-            // 
-            // shoeBrand
-            // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeId
-            // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
-            // 
             // gvShoeColors
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -105,6 +85,7 @@
             this.gvShoeColors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.shoeId,
             this.shoeBrand,
+            this.shoeCategory,
             this.shoeColor});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -205,6 +186,34 @@
             this.btnAddItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAddItems.Click += new System.EventHandler(this.btnAddItems_Click);
             // 
+            // shoeId
+            // 
+            this.shoeId.HeaderText = "Shoe ID";
+            this.shoeId.MinimumWidth = 6;
+            this.shoeId.Name = "shoeId";
+            this.shoeId.ReadOnly = true;
+            // 
+            // shoeBrand
+            // 
+            this.shoeBrand.HeaderText = "Shoe Brand";
+            this.shoeBrand.MinimumWidth = 6;
+            this.shoeBrand.Name = "shoeBrand";
+            this.shoeBrand.ReadOnly = true;
+            // 
+            // shoeCategory
+            // 
+            this.shoeCategory.HeaderText = "Shoe Category";
+            this.shoeCategory.MinimumWidth = 6;
+            this.shoeCategory.Name = "shoeCategory";
+            this.shoeCategory.ReadOnly = true;
+            // 
+            // shoeColor
+            // 
+            this.shoeColor.HeaderText = "Shoe Color";
+            this.shoeColor.MinimumWidth = 6;
+            this.shoeColor.Name = "shoeColor";
+            this.shoeColor.ReadOnly = true;
+            // 
             // frmShoesColors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -226,11 +235,12 @@
         #endregion
 
         private Guna.UI.WinForms.GunaTextBox txtSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
         private Guna.UI.WinForms.GunaDataGridView gvShoeColors;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
         private Guna.UI.WinForms.GunaButton btnAddItems;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
     }
 }
