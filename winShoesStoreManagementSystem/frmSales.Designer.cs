@@ -34,6 +34,8 @@
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.gvSales = new Guna.UI.WinForms.GunaDataGridView();
             this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +85,8 @@
             this.gvSales.ColumnHeadersHeight = 27;
             this.gvSales.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.shoeId,
+            this.shoeBrand,
+            this.shoeCategory,
             this.shoeColor,
             this.shoeStyle,
             this.shoeSize,
@@ -136,6 +140,20 @@
             this.shoeId.Name = "shoeId";
             this.shoeId.ReadOnly = true;
             // 
+            // shoeBrand
+            // 
+            this.shoeBrand.HeaderText = "Shoe Brand";
+            this.shoeBrand.MinimumWidth = 6;
+            this.shoeBrand.Name = "shoeBrand";
+            this.shoeBrand.ReadOnly = true;
+            // 
+            // shoeCategory
+            // 
+            this.shoeCategory.HeaderText = "Shoe Category";
+            this.shoeCategory.MinimumWidth = 6;
+            this.shoeCategory.Name = "shoeCategory";
+            this.shoeCategory.ReadOnly = true;
+            // 
             // shoeColor
             // 
             this.shoeColor.HeaderText = "Shoe Color";
@@ -184,6 +202,8 @@
         private Guna.UI.WinForms.GunaTextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView gvSales;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;

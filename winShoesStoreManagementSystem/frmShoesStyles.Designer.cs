@@ -33,11 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.gvShoeStyles = new Guna.UI.WinForms.GunaDataGridView();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
+            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvShoeStyles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             this.gvShoeStyles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.shoeId,
             this.shoeBrand,
+            this.shoeCategory,
             this.shoeStyle});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -126,27 +128,6 @@
             this.gvShoeStyles.ThemeStyle.RowsStyle.Height = 24;
             this.gvShoeStyles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gvShoeStyles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // shoeId
-            // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
-            // 
-            // shoeBrand
-            // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeStyle
-            // 
-            this.shoeStyle.HeaderText = "Shoe Style";
-            this.shoeStyle.MinimumWidth = 6;
-            this.shoeStyle.Name = "shoeStyle";
-            this.shoeStyle.ReadOnly = true;
             // 
             // btnAddItems
             // 
@@ -204,6 +185,34 @@
             this.btnAddBulk.Text = "+Add Bulk";
             this.btnAddBulk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // shoeId
+            // 
+            this.shoeId.HeaderText = "Shoe ID";
+            this.shoeId.MinimumWidth = 6;
+            this.shoeId.Name = "shoeId";
+            this.shoeId.ReadOnly = true;
+            // 
+            // shoeBrand
+            // 
+            this.shoeBrand.HeaderText = "Shoe Brand";
+            this.shoeBrand.MinimumWidth = 6;
+            this.shoeBrand.Name = "shoeBrand";
+            this.shoeBrand.ReadOnly = true;
+            // 
+            // shoeCategory
+            // 
+            this.shoeCategory.HeaderText = "Shoe Category";
+            this.shoeCategory.MinimumWidth = 6;
+            this.shoeCategory.Name = "shoeCategory";
+            this.shoeCategory.ReadOnly = true;
+            // 
+            // shoeStyle
+            // 
+            this.shoeStyle.HeaderText = "Shoe Style";
+            this.shoeStyle.MinimumWidth = 6;
+            this.shoeStyle.Name = "shoeStyle";
+            this.shoeStyle.ReadOnly = true;
+            // 
             // frmShoesStyles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -226,10 +235,11 @@
         #endregion
         private Guna.UI.WinForms.GunaTextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView gvShoeStyles;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
         private Guna.UI.WinForms.GunaButton btnAddItems;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
     }
 }

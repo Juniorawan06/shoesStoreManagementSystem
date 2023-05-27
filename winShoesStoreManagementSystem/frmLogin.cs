@@ -25,19 +25,21 @@ namespace winShoesStoreManagementSystem
                 adminPanel.Show();
                 Hide();
             }
-            else if(txtUserName.Text == "user")
+            else if (txtUserName.Text == "user")
             {
                 frmUserPanel userPanel = new frmUserPanel();
                 userPanel.Show();
                 Hide();
             }
+            else
+                MessageBox.Show("Invalid Credentials");
         }
 
         private void lblRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             frmSignUp sp = new frmSignUp();
             sp.Show();
-            Hide();
+            Hide(); 
         }
     }
 }
