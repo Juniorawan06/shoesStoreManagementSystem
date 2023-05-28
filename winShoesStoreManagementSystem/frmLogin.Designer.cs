@@ -56,11 +56,11 @@
             this.lblUserLogin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblUserLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserLogin.ForeColor = System.Drawing.Color.Black;
-            this.lblUserLogin.Location = new System.Drawing.Point(550, 42);
+            this.lblUserLogin.Location = new System.Drawing.Point(525, 46);
             this.lblUserLogin.Name = "lblUserLogin";
-            this.lblUserLogin.Size = new System.Drawing.Size(178, 31);
+            this.lblUserLogin.Size = new System.Drawing.Size(198, 31);
             this.lblUserLogin.TabIndex = 1;
-            this.lblUserLogin.Text = "USER LOGIN";
+            this.lblUserLogin.Text = "Welcome Back";
             // 
             // lblHi
             // 

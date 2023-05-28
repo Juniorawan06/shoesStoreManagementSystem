@@ -90,3 +90,5 @@ E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSys
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmBrands.resources
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmUserPanel.resources
 E:\University\5th Semester\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmStock.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmBarCodeGeneration.resources
+C:\Users\Chacha Tech\source\repos\shoesStoreManagementSystem\winShoesStoreManagementSystem\obj\Debug\winShoesStoreManagementSystem.frmStock.resources
