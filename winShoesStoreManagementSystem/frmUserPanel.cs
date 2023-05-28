@@ -128,6 +128,20 @@ namespace winShoesStoreManagementSystem
             brands.Show();
         }
 
+        private void btnBarCode_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Bar Code";
+            pnlDashboard.Controls.Clear();
+            frmBarCodeGeneration barCode = new frmBarCodeGeneration
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(barCode);
+            barCode.Show();
+        }
+
         private void btnLogOut_Click_1(object sender, EventArgs e)
         {
             Hide();

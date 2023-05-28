@@ -38,6 +38,7 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBrands = new System.Windows.Forms.Button();
             this.btnSale = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
             this.btnShoesStyles = new System.Windows.Forms.Button();
@@ -45,7 +46,7 @@
             this.btnShoesSizes = new System.Windows.Forms.Button();
             this.btnAddItems = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnBrands = new System.Windows.Forms.Button();
+            this.btnBarCode = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -151,6 +152,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.btnBarCode);
             this.panel1.Controls.Add(this.btnBrands);
             this.panel1.Controls.Add(this.btnSale);
             this.panel1.Controls.Add(this.btnInvoice);
@@ -165,6 +167,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 812);
             this.panel1.TabIndex = 3;
+            // 
+            // btnBrands
+            // 
+            this.btnBrands.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBrands.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBrands.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrands.Image = ((System.Drawing.Image)(resources.GetObject("btnBrands.Image")));
+            this.btnBrands.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrands.Location = new System.Drawing.Point(0, 509);
+            this.btnBrands.Name = "btnBrands";
+            this.btnBrands.Size = new System.Drawing.Size(238, 52);
+            this.btnBrands.TabIndex = 8;
+            this.btnBrands.Text = "Brands";
+            this.btnBrands.UseVisualStyleBackColor = false;
+            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
             // 
             // btnSale
             // 
@@ -279,21 +297,21 @@
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click_1);
             // 
-            // btnBrands
+            // btnBarCode
             // 
-            this.btnBrands.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBrands.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBrands.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBrands.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrands.Image = ((System.Drawing.Image)(resources.GetObject("btnBrands.Image")));
-            this.btnBrands.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrands.Location = new System.Drawing.Point(0, 509);
-            this.btnBrands.Name = "btnBrands";
-            this.btnBrands.Size = new System.Drawing.Size(238, 52);
-            this.btnBrands.TabIndex = 8;
-            this.btnBrands.Text = "Brands";
-            this.btnBrands.UseVisualStyleBackColor = false;
-            this.btnBrands.Click += new System.EventHandler(this.btnBrands_Click);
+            this.btnBarCode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBarCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarCode.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarCode.Image = ((System.Drawing.Image)(resources.GetObject("btnBarCode.Image")));
+            this.btnBarCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarCode.Location = new System.Drawing.Point(0, 561);
+            this.btnBarCode.Name = "btnBarCode";
+            this.btnBarCode.Size = new System.Drawing.Size(238, 52);
+            this.btnBarCode.TabIndex = 9;
+            this.btnBarCode.Text = "Bar Code";
+            this.btnBarCode.UseVisualStyleBackColor = false;
+            this.btnBarCode.Click += new System.EventHandler(this.btnBarCode_Click);
             // 
             // frmUserPanel
             // 
@@ -337,5 +355,6 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnInvoice;
         private System.Windows.Forms.Button btnBrands;
+        private System.Windows.Forms.Button btnBarCode;
     }
 }
