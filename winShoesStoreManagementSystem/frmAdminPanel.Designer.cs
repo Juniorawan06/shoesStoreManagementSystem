@@ -47,6 +47,7 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.btnBarCode = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.btnBarCode);
             this.panel1.Controls.Add(this.btnSale);
             this.panel1.Controls.Add(this.btnBrands);
             this.panel1.Controls.Add(this.btnShoesStyles);
@@ -250,7 +252,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightGray;
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.lblSubject);
             this.panel2.Controls.Add(this.txtSearch);
@@ -313,6 +315,22 @@
             this.pnlDashboard.Size = new System.Drawing.Size(1569, 732);
             this.pnlDashboard.TabIndex = 2;
             // 
+            // btnBarCode
+            // 
+            this.btnBarCode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBarCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarCode.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarCode.Image = ((System.Drawing.Image)(resources.GetObject("btnBarCode.Image")));
+            this.btnBarCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarCode.Location = new System.Drawing.Point(0, 613);
+            this.btnBarCode.Name = "btnBarCode";
+            this.btnBarCode.Size = new System.Drawing.Size(238, 52);
+            this.btnBarCode.TabIndex = 8;
+            this.btnBarCode.Text = "Bar Code";
+            this.btnBarCode.UseVisualStyleBackColor = false;
+            this.btnBarCode.Click += new System.EventHandler(this.btnBarCode_Click);
+            // 
             // frmAdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -344,18 +362,19 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblStoreName;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnDashboard;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
         private System.Windows.Forms.Button btnLogOut;
-        private System.Windows.Forms.Button btnPurchases;
-        private System.Windows.Forms.Button btnSale;
-        private System.Windows.Forms.Button btnShoesColor;
-        private System.Windows.Forms.Button btnShoesSizes;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblSubject;
-        private System.Windows.Forms.Button btnShoesStyles;
-        private System.Windows.Forms.Button btnAddItems;
         private System.Windows.Forms.Panel pnlDashboard;
+        private System.Windows.Forms.Button btnSale;
         private System.Windows.Forms.Button btnBrands;
+        private System.Windows.Forms.Button btnShoesStyles;
+        private System.Windows.Forms.Button btnPurchases;
+        private System.Windows.Forms.Button btnShoesSizes;
+        private System.Windows.Forms.Button btnShoesColor;
+        private System.Windows.Forms.Button btnAddItems;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnBarCode;
     }
 }

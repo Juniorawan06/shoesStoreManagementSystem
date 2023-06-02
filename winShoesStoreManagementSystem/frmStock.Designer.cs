@@ -40,9 +40,6 @@
             this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
-            this.btnDelete = new Guna.UI.WinForms.GunaButton();
-            this.btnUpdate = new Guna.UI.WinForms.GunaButton();
-            this.btnInsert = new Guna.UI.WinForms.GunaButton();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvStock)).BeginInit();
             this.SuspendLayout();
@@ -212,91 +209,6 @@
             this.btnAddBulk.Text = "+Add Bulk";
             this.btnAddBulk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnDelete
-            // 
-            this.btnDelete.AnimationHoverSpeed = 0.07F;
-            this.btnDelete.AnimationSpeed = 0.03F;
-            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.btnDelete.BaseColor = System.Drawing.Color.Red;
-            this.btnDelete.BorderColor = System.Drawing.Color.Black;
-            this.btnDelete.BorderSize = 1;
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDelete.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Image = null;
-            this.btnDelete.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDelete.Location = new System.Drawing.Point(1360, 204);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.OnHoverBaseColor = System.Drawing.Color.Gray;
-            this.btnDelete.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDelete.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDelete.OnHoverImage = null;
-            this.btnDelete.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDelete.Radius = 10;
-            this.btnDelete.Size = new System.Drawing.Size(109, 39);
-            this.btnDelete.TabIndex = 43;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.AnimationHoverSpeed = 0.07F;
-            this.btnUpdate.AnimationSpeed = 0.03F;
-            this.btnUpdate.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpdate.BaseColor = System.Drawing.Color.Yellow;
-            this.btnUpdate.BorderColor = System.Drawing.Color.Black;
-            this.btnUpdate.BorderSize = 1;
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUpdate.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Image = null;
-            this.btnUpdate.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUpdate.Location = new System.Drawing.Point(1360, 159);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.OnHoverBaseColor = System.Drawing.Color.Gray;
-            this.btnUpdate.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnUpdate.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnUpdate.OnHoverImage = null;
-            this.btnUpdate.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUpdate.Radius = 10;
-            this.btnUpdate.Size = new System.Drawing.Size(109, 39);
-            this.btnUpdate.TabIndex = 43;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.AnimationHoverSpeed = 0.07F;
-            this.btnInsert.AnimationSpeed = 0.03F;
-            this.btnInsert.BackColor = System.Drawing.Color.Transparent;
-            this.btnInsert.BaseColor = System.Drawing.Color.Lime;
-            this.btnInsert.BorderColor = System.Drawing.Color.Black;
-            this.btnInsert.BorderSize = 1;
-            this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInsert.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnInsert.FocusedColor = System.Drawing.Color.Empty;
-            this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btnInsert.ForeColor = System.Drawing.Color.Black;
-            this.btnInsert.Image = null;
-            this.btnInsert.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnInsert.Location = new System.Drawing.Point(1360, 114);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.OnHoverBaseColor = System.Drawing.Color.Gray;
-            this.btnInsert.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnInsert.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnInsert.OnHoverImage = null;
-            this.btnInsert.OnPressedColor = System.Drawing.Color.Black;
-            this.btnInsert.Radius = 10;
-            this.btnInsert.Size = new System.Drawing.Size(109, 39);
-            this.btnInsert.TabIndex = 43;
-            this.btnInsert.Text = "Insert";
-            this.btnInsert.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.Color.Transparent;
@@ -326,9 +238,6 @@
             this.ClientSize = new System.Drawing.Size(1524, 777);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnAddItems);
-            this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAddBulk);
             this.Controls.Add(this.gvStock);
             this.DoubleBuffered = true;
@@ -351,9 +260,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
         private Guna.UI.WinForms.GunaButton btnAddItems;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
-        private Guna.UI.WinForms.GunaButton btnDelete;
-        private Guna.UI.WinForms.GunaButton btnUpdate;
-        private Guna.UI.WinForms.GunaButton btnInsert;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
     }
 }

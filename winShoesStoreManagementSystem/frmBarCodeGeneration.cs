@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmShoesSizes : Form
+    public partial class frmBarCodeGeneration : Form
     {
-        public frmShoesSizes()
+        public frmBarCodeGeneration()
         {
             InitializeComponent();
-        }
-
-        private void gvShoeColors_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
