@@ -16,5 +16,10 @@ namespace winShoesStoreManagementSystem
         {
             InitializeComponent();
         }
+
+        private void gvShoeColors_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
