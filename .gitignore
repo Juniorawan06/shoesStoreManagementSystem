@@ -1,4 +1,47 @@
-# Ignore bin and obj folders
+# Ignore Visual Studio files
+.vs/
+*.sln
+*.suo
+*.user
+*.userprefs
+*.vscode/
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.editorconfig
+*.[Rr]e[Ss]harper
+*.dotCover
+*.dotSettings
+*.build.csdef
+
+# Ignore build output and NuGet packages
 bin/
 obj/
+packages/
 
+# Ignore logs and other generated files
+*.log
+*.bak
+*.cache
+*.sqlproj.user
+
+# Ignore application-specific files
+appsettings.json
+appsettings.Development.json
+
+# Ignore user-specific files
+appsettings.*.json.user
+*.userprefs
+
+# Ignore deployment files
+*.pubxml
+*.publishsettings
+
+# Ignore test files
+*.testsettings
+*.testhost
+*.trx
