@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdminPanel));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBarCode = new System.Windows.Forms.Button();
             this.btnSale = new System.Windows.Forms.Button();
             this.btnBrands = new System.Windows.Forms.Button();
             this.btnShoesStyles = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.btnBarCode = new System.Windows.Forms.Button();
+            this.btnUsers = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.btnUsers);
             this.panel1.Controls.Add(this.btnBarCode);
             this.panel1.Controls.Add(this.btnSale);
             this.panel1.Controls.Add(this.btnBrands);
@@ -73,6 +75,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 812);
             this.panel1.TabIndex = 0;
+            // 
+            // btnBarCode
+            // 
+            this.btnBarCode.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBarCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBarCode.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBarCode.Image = ((System.Drawing.Image)(resources.GetObject("btnBarCode.Image")));
+            this.btnBarCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBarCode.Location = new System.Drawing.Point(0, 613);
+            this.btnBarCode.Name = "btnBarCode";
+            this.btnBarCode.Size = new System.Drawing.Size(238, 52);
+            this.btnBarCode.TabIndex = 8;
+            this.btnBarCode.Text = "Bar Code";
+            this.btnBarCode.UseVisualStyleBackColor = false;
+            this.btnBarCode.Click += new System.EventHandler(this.btnBarCode_Click);
             // 
             // btnSale
             // 
@@ -297,7 +315,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSearch.Location = new System.Drawing.Point(332, 17);
+            this.txtSearch.Location = new System.Drawing.Point(336, 17);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -315,21 +333,21 @@
             this.pnlDashboard.Size = new System.Drawing.Size(1569, 732);
             this.pnlDashboard.TabIndex = 2;
             // 
-            // btnBarCode
+            // btnUsers
             // 
-            this.btnBarCode.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnBarCode.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBarCode.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBarCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBarCode.Image = ((System.Drawing.Image)(resources.GetObject("btnBarCode.Image")));
-            this.btnBarCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBarCode.Location = new System.Drawing.Point(0, 613);
-            this.btnBarCode.Name = "btnBarCode";
-            this.btnBarCode.Size = new System.Drawing.Size(238, 52);
-            this.btnBarCode.TabIndex = 8;
-            this.btnBarCode.Text = "Bar Code";
-            this.btnBarCode.UseVisualStyleBackColor = false;
-            this.btnBarCode.Click += new System.EventHandler(this.btnBarCode_Click);
+            this.btnUsers.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsers.Image = ((System.Drawing.Image)(resources.GetObject("btnUsers.Image")));
+            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUsers.Location = new System.Drawing.Point(0, 665);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(238, 52);
+            this.btnUsers.TabIndex = 9;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // frmAdminPanel
             // 
@@ -376,5 +394,6 @@
         private System.Windows.Forms.Button btnAddItems;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnBarCode;
+        private System.Windows.Forms.Button btnUsers;
     }
 }

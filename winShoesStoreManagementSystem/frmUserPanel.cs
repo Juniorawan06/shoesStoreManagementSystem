@@ -19,6 +19,7 @@ namespace winShoesStoreManagementSystem
 
         private void frmUserPanel_Load_1(object sender, EventArgs e)
         {
+            lblUsername.Text = frmLogin.username;
             lblSubject.Text = "Sales";
             pnlDashboard.Controls.Clear();
             frmSales sales = new frmSales

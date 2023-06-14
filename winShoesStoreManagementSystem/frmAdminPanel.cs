@@ -19,6 +19,7 @@ namespace winShoesStoreManagementSystem
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
+            lblUsername.Text = frmLogin.username;
             lblSubject.Text = "Dashboard";
             frmAnalytics analytics = new frmAnalytics
             {
@@ -153,6 +154,20 @@ namespace winShoesStoreManagementSystem
             };
             pnlDashboard.Controls.Add(barCode);
             barCode.Show();
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            lblSubject.Text = "Users";
+            pnlDashboard.Controls.Clear();
+            frmUsers users = new frmUsers
+            {
+                TopLevel = false,
+                TopMost = true,
+                Dock = DockStyle.Fill
+            };
+            pnlDashboard.Controls.Add(users);
+            users.Show();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
