@@ -20,16 +20,16 @@ namespace winShoesStoreManagementSystem
         private void frmUserPanel_Load_1(object sender, EventArgs e)
         {
             lblUsername.Text = frmLogin.username;
-            lblSubject.Text = "Sales";
+            lblSubject.Text = "Invoices";
             pnlDashboard.Controls.Clear();
-            frmSales sales = new frmSales
+            frmInvoice invoice = new frmInvoice
             {
                 TopLevel = false,
                 TopMost = true,
                 Dock = DockStyle.Fill
             };
-            pnlDashboard.Controls.Add(sales);
-            sales.Show();
+            pnlDashboard.Controls.Add(invoice);
+            invoice.Show();
         }
 
         private void btnShoesSizes_Click_1(object sender, EventArgs e)

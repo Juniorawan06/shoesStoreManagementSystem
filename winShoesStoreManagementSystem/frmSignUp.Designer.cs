@@ -35,15 +35,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSignup = new Guna.UI.WinForms.GunaButton();
-            this.txtusername2 = new Guna.UI.WinForms.GunaTextBox();
-            this.txtcontact = new Guna.UI.WinForms.GunaTextBox();
-            this.txtpassword = new Guna.UI.WinForms.GunaTextBox();
-            this.txtconfirmpassword = new Guna.UI.WinForms.GunaTextBox();
+            this.txtUsername = new Guna.UI.WinForms.GunaTextBox();
+            this.txtContact = new Guna.UI.WinForms.GunaTextBox();
+            this.txtPassword = new Guna.UI.WinForms.GunaTextBox();
+            this.txtConfirmPassword = new Guna.UI.WinForms.GunaTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblSignIn = new System.Windows.Forms.LinkLabel();
             this.label7 = new System.Windows.Forms.Label();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.cmbRole = new Guna.UI.WinForms.GunaComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +131,7 @@
             this.btnSignup.ForeColor = System.Drawing.Color.Black;
             this.btnSignup.Image = null;
             this.btnSignup.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSignup.Location = new System.Drawing.Point(156, 523);
+            this.btnSignup.Location = new System.Drawing.Point(154, 608);
             this.btnSignup.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -142,88 +144,89 @@
             this.btnSignup.TabIndex = 5;
             this.btnSignup.Text = "Sign UP";
             this.btnSignup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
-            // txtusername2
+            // txtUsername
             // 
-            this.txtusername2.BackColor = System.Drawing.Color.Transparent;
-            this.txtusername2.BaseColor = System.Drawing.Color.White;
-            this.txtusername2.BorderColor = System.Drawing.Color.Black;
-            this.txtusername2.BorderSize = 1;
-            this.txtusername2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtusername2.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtusername2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtusername2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtusername2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtusername2.Location = new System.Drawing.Point(116, 161);
-            this.txtusername2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtusername2.Name = "txtusername2";
-            this.txtusername2.PasswordChar = '\0';
-            this.txtusername2.Radius = 12;
-            this.txtusername2.SelectedText = "";
-            this.txtusername2.Size = new System.Drawing.Size(309, 37);
-            this.txtusername2.TabIndex = 6;
+            this.txtUsername.BackColor = System.Drawing.Color.Transparent;
+            this.txtUsername.BaseColor = System.Drawing.Color.White;
+            this.txtUsername.BorderColor = System.Drawing.Color.Black;
+            this.txtUsername.BorderSize = 1;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtUsername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtUsername.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUsername.Location = new System.Drawing.Point(116, 161);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.Radius = 12;
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(309, 37);
+            this.txtUsername.TabIndex = 6;
             // 
-            // txtcontact
+            // txtContact
             // 
-            this.txtcontact.BackColor = System.Drawing.Color.Transparent;
-            this.txtcontact.BaseColor = System.Drawing.Color.White;
-            this.txtcontact.BorderColor = System.Drawing.Color.Black;
-            this.txtcontact.BorderSize = 1;
-            this.txtcontact.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcontact.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtcontact.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtcontact.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtcontact.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtcontact.Location = new System.Drawing.Point(116, 254);
-            this.txtcontact.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcontact.Name = "txtcontact";
-            this.txtcontact.PasswordChar = '\0';
-            this.txtcontact.Radius = 12;
-            this.txtcontact.SelectedText = "";
-            this.txtcontact.Size = new System.Drawing.Size(309, 37);
-            this.txtcontact.TabIndex = 7;
+            this.txtContact.BackColor = System.Drawing.Color.Transparent;
+            this.txtContact.BaseColor = System.Drawing.Color.White;
+            this.txtContact.BorderColor = System.Drawing.Color.Black;
+            this.txtContact.BorderSize = 1;
+            this.txtContact.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContact.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtContact.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtContact.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContact.Location = new System.Drawing.Point(116, 254);
+            this.txtContact.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.PasswordChar = '\0';
+            this.txtContact.Radius = 12;
+            this.txtContact.SelectedText = "";
+            this.txtContact.Size = new System.Drawing.Size(309, 37);
+            this.txtContact.TabIndex = 7;
             // 
-            // txtpassword
+            // txtPassword
             // 
-            this.txtpassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtpassword.BaseColor = System.Drawing.Color.White;
-            this.txtpassword.BorderColor = System.Drawing.Color.Black;
-            this.txtpassword.BorderSize = 1;
-            this.txtpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpassword.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtpassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtpassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtpassword.Location = new System.Drawing.Point(116, 345);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtpassword.Multiline = true;
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.PasswordChar = '\0';
-            this.txtpassword.Radius = 12;
-            this.txtpassword.SelectedText = "";
-            this.txtpassword.Size = new System.Drawing.Size(309, 37);
-            this.txtpassword.TabIndex = 8;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BaseColor = System.Drawing.Color.White;
+            this.txtPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.Location = new System.Drawing.Point(116, 345);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.Radius = 12;
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(309, 37);
+            this.txtPassword.TabIndex = 8;
             // 
-            // txtconfirmpassword
+            // txtConfirmPassword
             // 
-            this.txtconfirmpassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtconfirmpassword.BaseColor = System.Drawing.Color.White;
-            this.txtconfirmpassword.BorderColor = System.Drawing.Color.Black;
-            this.txtconfirmpassword.BorderSize = 1;
-            this.txtconfirmpassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtconfirmpassword.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtconfirmpassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtconfirmpassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtconfirmpassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtconfirmpassword.Location = new System.Drawing.Point(116, 431);
-            this.txtconfirmpassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtconfirmpassword.Multiline = true;
-            this.txtconfirmpassword.Name = "txtconfirmpassword";
-            this.txtconfirmpassword.PasswordChar = '\0';
-            this.txtconfirmpassword.Radius = 12;
-            this.txtconfirmpassword.SelectedText = "";
-            this.txtconfirmpassword.Size = new System.Drawing.Size(309, 37);
-            this.txtconfirmpassword.TabIndex = 9;
+            this.txtConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtConfirmPassword.BaseColor = System.Drawing.Color.White;
+            this.txtConfirmPassword.BorderColor = System.Drawing.Color.Black;
+            this.txtConfirmPassword.BorderSize = 1;
+            this.txtConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtConfirmPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtConfirmPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtConfirmPassword.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(116, 431);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtConfirmPassword.Multiline = true;
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '\0';
+            this.txtConfirmPassword.Radius = 12;
+            this.txtConfirmPassword.SelectedText = "";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(309, 37);
+            this.txtConfirmPassword.TabIndex = 9;
             // 
             // panel1
             // 
@@ -235,7 +238,7 @@
             this.panel1.Location = new System.Drawing.Point(670, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(401, 618);
+            this.panel1.Size = new System.Drawing.Size(401, 704);
             this.panel1.TabIndex = 10;
             // 
             // pictureBox1
@@ -269,7 +272,7 @@
             this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignIn.ForeColor = System.Drawing.Color.Black;
             this.lblSignIn.LinkColor = System.Drawing.Color.Black;
-            this.lblSignIn.Location = new System.Drawing.Point(353, 482);
+            this.lblSignIn.Location = new System.Drawing.Point(351, 567);
             this.lblSignIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignIn.Name = "lblSignIn";
             this.lblSignIn.Size = new System.Drawing.Size(64, 20);
@@ -284,27 +287,66 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(124, 483);
+            this.label7.Location = new System.Drawing.Point(122, 568);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(201, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Already have an account?";
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.Black;
+            this.lblRole.Location = new System.Drawing.Point(111, 487);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(55, 25);
+            this.lblRole.TabIndex = 2;
+            this.lblRole.Text = "Role";
+            // 
+            // cmbRole
+            // 
+            this.cmbRole.BackColor = System.Drawing.Color.Transparent;
+            this.cmbRole.BaseColor = System.Drawing.Color.White;
+            this.cmbRole.BorderColor = System.Drawing.Color.Black;
+            this.cmbRole.BorderSize = 1;
+            this.cmbRole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRole.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbRole.ForeColor = System.Drawing.Color.Black;
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.ItemHeight = 30;
+            this.cmbRole.Items.AddRange(new object[] {
+            "Admin",
+            "User"});
+            this.cmbRole.Location = new System.Drawing.Point(116, 515);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbRole.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbRole.Radius = 12;
+            this.cmbRole.Size = new System.Drawing.Size(309, 36);
+            this.cmbRole.TabIndex = 13;
             // 
             // frmSignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1071, 618);
+            this.ClientSize = new System.Drawing.Size(1071, 704);
+            this.Controls.Add(this.cmbRole);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblSignIn);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtconfirmpassword);
-            this.Controls.Add(this.txtpassword);
-            this.Controls.Add(this.txtcontact);
-            this.Controls.Add(this.txtusername2);
+            this.Controls.Add(this.txtConfirmPassword);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtContact);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblRole);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -330,14 +372,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaButton btnSignup;
-        private Guna.UI.WinForms.GunaTextBox txtusername2;
-        private Guna.UI.WinForms.GunaTextBox txtcontact;
-        private Guna.UI.WinForms.GunaTextBox txtpassword;
-        private Guna.UI.WinForms.GunaTextBox txtconfirmpassword;
+        private Guna.UI.WinForms.GunaTextBox txtUsername;
+        private Guna.UI.WinForms.GunaTextBox txtContact;
+        private Guna.UI.WinForms.GunaTextBox txtPassword;
+        private Guna.UI.WinForms.GunaTextBox txtConfirmPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel lblSignIn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblRole;
+        private Guna.UI.WinForms.GunaComboBox cmbRole;
     }
 }
