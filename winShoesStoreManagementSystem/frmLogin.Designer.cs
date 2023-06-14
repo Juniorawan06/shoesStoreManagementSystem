@@ -192,6 +192,7 @@
             this.btnLogin.BaseColor = System.Drawing.Color.White;
             this.btnLogin.BorderColor = System.Drawing.Color.Black;
             this.btnLogin.BorderSize = 1;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogin.FocusedColor = System.Drawing.Color.Empty;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));

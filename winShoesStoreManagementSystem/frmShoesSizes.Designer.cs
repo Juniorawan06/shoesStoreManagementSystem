@@ -35,11 +35,6 @@
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.gvShoeColors = new Guna.UI.WinForms.GunaDataGridView();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnActions = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvShoeColors)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +50,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(1247, 116);
+            this.txtSearch.Location = new System.Drawing.Point(1264, 106);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -80,7 +75,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.White;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(69, 116);
+            this.btnAddItems.Location = new System.Drawing.Point(86, 106);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -108,7 +103,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.White;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(210, 116);
+            this.btnAddBulk.Location = new System.Drawing.Point(227, 106);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -139,12 +134,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvShoeColors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gvShoeColors.ColumnHeadersHeight = 27;
-            this.gvShoeColors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.shoeId,
-            this.shoeBrand,
-            this.shoeCategory,
-            this.shoeColor,
-            this.btnActions});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -155,7 +144,7 @@
             this.gvShoeColors.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvShoeColors.EnableHeadersVisualStyles = false;
             this.gvShoeColors.GridColor = System.Drawing.Color.White;
-            this.gvShoeColors.Location = new System.Drawing.Point(66, 202);
+            this.gvShoeColors.Location = new System.Drawing.Point(83, 192);
             this.gvShoeColors.Name = "gvShoeColors";
             this.gvShoeColors.ReadOnly = true;
             this.gvShoeColors.RowHeadersVisible = false;
@@ -187,41 +176,6 @@
             this.gvShoeColors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gvShoeColors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // shoeId
-            // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
-            // 
-            // shoeBrand
-            // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeCategory
-            // 
-            this.shoeCategory.HeaderText = "Shoe Category";
-            this.shoeCategory.MinimumWidth = 6;
-            this.shoeCategory.Name = "shoeCategory";
-            this.shoeCategory.ReadOnly = true;
-            // 
-            // shoeColor
-            // 
-            this.shoeColor.HeaderText = "Shoe Size";
-            this.shoeColor.MinimumWidth = 6;
-            this.shoeColor.Name = "shoeColor";
-            this.shoeColor.ReadOnly = true;
-            // 
-            // btnActions
-            // 
-            this.btnActions.HeaderText = "Actions";
-            this.btnActions.MinimumWidth = 6;
-            this.btnActions.Name = "btnActions";
-            this.btnActions.ReadOnly = true;
-            // 
             // frmShoesSizes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -246,10 +200,5 @@
         private Guna.UI.WinForms.GunaButton btnAddItems;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
         private Guna.UI.WinForms.GunaDataGridView gvShoeColors;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn btnActions;
     }
 }
