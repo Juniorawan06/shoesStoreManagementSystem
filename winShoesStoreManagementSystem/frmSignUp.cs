@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,31 @@ namespace winShoesStoreManagementSystem
             InitializeComponent();
         }
 
+        // Set up database connection
+        SqlConnection con = new SqlConnection("Data Source=JUNIOR-06\\SQLEXPRESS;Initial Catalog=dbSsms;Integrated Security=True");
         private void lblSignIn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmLogin login = new frmLogin();
-            login.Show();
+            frmLogin lgoin = new frmLogin();
             Hide();
+            lgoin.Show();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            string qry = "insert into tblUsers values ('" + txtUsername.Text + "','" + txtContact.Text + "','" + txtPassword.Text + "','" + cmbRole.Text + "')";
+
+            SqlCommand cmd = new SqlCommand(qry, con);
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            txtUsername.Clear();
+            txtContact.Clear();
+            txtPassword.Clear();
+            cmbRole.Text = "";
+
+            MessageBox.Show("Data Submitted Sucessfully");
         }
     }
 }
