@@ -35,9 +35,6 @@
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.gvBrands = new Guna.UI.WinForms.GunaDataGridView();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.brandId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sellingPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvBrands)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +63,7 @@
             this.btnAddItems.Radius = 10;
             this.btnAddItems.Size = new System.Drawing.Size(125, 42);
             this.btnAddItems.TabIndex = 40;
-            this.btnAddItems.Text = "+Add Items";
+            this.btnAddItems.Text = "+Add Brands";
             this.btnAddItems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAddBulk
@@ -115,10 +112,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvBrands.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gvBrands.ColumnHeadersHeight = 27;
-            this.gvBrands.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.brandId,
-            this.brandName,
-            this.sellingPrice});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -183,27 +176,6 @@
             this.txtSearch.TabIndex = 38;
             this.txtSearch.Text = "Search...";
             // 
-            // brandId
-            // 
-            this.brandId.HeaderText = "Brand Id";
-            this.brandId.MinimumWidth = 6;
-            this.brandId.Name = "brandId";
-            this.brandId.ReadOnly = true;
-            // 
-            // brandName
-            // 
-            this.brandName.HeaderText = "Brand Name";
-            this.brandName.MinimumWidth = 6;
-            this.brandName.Name = "brandName";
-            this.brandName.ReadOnly = true;
-            // 
-            // sellingPrice
-            // 
-            this.sellingPrice.HeaderText = "Selling Price";
-            this.sellingPrice.MinimumWidth = 6;
-            this.sellingPrice.Name = "sellingPrice";
-            this.sellingPrice.ReadOnly = true;
-            // 
             // frmBrands
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -227,8 +199,5 @@
         private Guna.UI.WinForms.GunaButton btnAddBulk;
         private Guna.UI.WinForms.GunaDataGridView gvBrands;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn brandName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sellingPrice;
     }
 }

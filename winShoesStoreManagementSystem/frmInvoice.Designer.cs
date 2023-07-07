@@ -28,138 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gvInvoice = new Guna.UI.WinForms.GunaDataGridView();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCancel = new Guna.UI.WinForms.GunaButton();
             this.btnConfirm = new Guna.UI.WinForms.GunaButton();
+            this.gvInvoice = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
+            this.cmbReader = new Guna.UI.WinForms.GunaComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvInvoice)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gvInvoice
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gvInvoice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gvInvoice.BackgroundColor = System.Drawing.Color.White;
-            this.gvInvoice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gvInvoice.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gvInvoice.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvInvoice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gvInvoice.ColumnHeadersHeight = 27;
-            this.gvInvoice.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.shoeId,
-            this.shoeBrand,
-            this.shoeCategory,
-            this.shoeColor,
-            this.shoeStyle,
-            this.shoeSize,
-            this.shoePrice});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvInvoice.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gvInvoice.EnableHeadersVisualStyles = false;
-            this.gvInvoice.GridColor = System.Drawing.Color.White;
-            this.gvInvoice.Location = new System.Drawing.Point(67, 114);
-            this.gvInvoice.Name = "gvInvoice";
-            this.gvInvoice.ReadOnly = true;
-            this.gvInvoice.RowHeadersVisible = false;
-            this.gvInvoice.RowHeadersWidth = 51;
-            this.gvInvoice.RowTemplate.Height = 24;
-            this.gvInvoice.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvInvoice.Size = new System.Drawing.Size(1424, 329);
-            this.gvInvoice.TabIndex = 6;
-            this.gvInvoice.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gvInvoice.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gvInvoice.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gvInvoice.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gvInvoice.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gvInvoice.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.GridColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Gray;
-            this.gvInvoice.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gvInvoice.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gvInvoice.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gvInvoice.ThemeStyle.HeaderStyle.Height = 27;
-            this.gvInvoice.ThemeStyle.ReadOnly = true;
-            this.gvInvoice.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gvInvoice.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gvInvoice.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gvInvoice.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gvInvoice.ThemeStyle.RowsStyle.Height = 24;
-            this.gvInvoice.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvInvoice.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // shoeId
-            // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
-            // 
-            // shoeBrand
-            // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeCategory
-            // 
-            this.shoeCategory.HeaderText = "Shoe Category";
-            this.shoeCategory.MinimumWidth = 6;
-            this.shoeCategory.Name = "shoeCategory";
-            this.shoeCategory.ReadOnly = true;
-            // 
-            // shoeColor
-            // 
-            this.shoeColor.HeaderText = "Shoe Color";
-            this.shoeColor.MinimumWidth = 6;
-            this.shoeColor.Name = "shoeColor";
-            this.shoeColor.ReadOnly = true;
-            // 
-            // shoeStyle
-            // 
-            this.shoeStyle.HeaderText = "Shoe Style";
-            this.shoeStyle.MinimumWidth = 6;
-            this.shoeStyle.Name = "shoeStyle";
-            this.shoeStyle.ReadOnly = true;
-            // 
-            // shoeSize
-            // 
-            this.shoeSize.HeaderText = "Shoe Size";
-            this.shoeSize.MinimumWidth = 6;
-            this.shoeSize.Name = "shoeSize";
-            this.shoeSize.ReadOnly = true;
-            // 
-            // shoePrice
-            // 
-            this.shoePrice.HeaderText = "Shoe Price";
-            this.shoePrice.MinimumWidth = 6;
-            this.shoePrice.Name = "shoePrice";
-            this.shoePrice.ReadOnly = true;
             // 
             // btnCancel
             // 
@@ -175,7 +50,7 @@
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = null;
             this.btnCancel.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancel.Location = new System.Drawing.Point(1144, 482);
+            this.btnCancel.Location = new System.Drawing.Point(1125, 678);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnCancel.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,6 +62,7 @@
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnConfirm
             // 
@@ -202,7 +78,7 @@
             this.btnConfirm.ForeColor = System.Drawing.Color.White;
             this.btnConfirm.Image = null;
             this.btnConfirm.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnConfirm.Location = new System.Drawing.Point(1331, 482);
+            this.btnConfirm.Location = new System.Drawing.Point(1312, 678);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnConfirm.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -215,33 +91,82 @@
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // gvInvoice
+            // 
+            this.gvInvoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvInvoice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvInvoice.Location = new System.Drawing.Point(82, 215);
+            this.gvInvoice.Name = "gvInvoice";
+            this.gvInvoice.RowHeadersWidth = 51;
+            this.gvInvoice.RowTemplate.Height = 24;
+            this.gvInvoice.Size = new System.Drawing.Size(1390, 442);
+            this.gvInvoice.TabIndex = 41;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearch.BaseColor = System.Drawing.Color.White;
+            this.txtSearch.BorderColor = System.Drawing.Color.Silver;
+            this.txtSearch.BorderSize = 1;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtSearch.Location = new System.Drawing.Point(1249, 122);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.Radius = 8;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(223, 33);
+            this.txtSearch.TabIndex = 42;
+            this.txtSearch.Text = "Search...";
+            // 
+            // cmbReader
+            // 
+            this.cmbReader.BackColor = System.Drawing.Color.Transparent;
+            this.cmbReader.BaseColor = System.Drawing.Color.White;
+            this.cmbReader.BorderColor = System.Drawing.Color.Silver;
+            this.cmbReader.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbReader.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbReader.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbReader.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbReader.ForeColor = System.Drawing.Color.Black;
+            this.cmbReader.FormattingEnabled = true;
+            this.cmbReader.Location = new System.Drawing.Point(82, 124);
+            this.cmbReader.Name = "cmbReader";
+            this.cmbReader.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbReader.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbReader.Size = new System.Drawing.Size(247, 31);
+            this.cmbReader.TabIndex = 43;
+            this.cmbReader.SelectedIndexChanged += new System.EventHandler(this.cmbReader_SelectedIndexChanged);
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1569, 732);
+            this.Controls.Add(this.cmbReader);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.gvInvoice);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.gvInvoice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmInvoice";
             this.Text = "Invoice";
+            this.Load += new System.EventHandler(this.frmInvoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvInvoice)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaDataGridView gvInvoice;
         private Guna.UI.WinForms.GunaButton btnCancel;
         private Guna.UI.WinForms.GunaButton btnConfirm;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoePrice;
+        private System.Windows.Forms.DataGridView gvInvoice;
+        private Guna.UI.WinForms.GunaTextBox txtSearch;
+        private Guna.UI.WinForms.GunaComboBox cmbReader;
     }
 }

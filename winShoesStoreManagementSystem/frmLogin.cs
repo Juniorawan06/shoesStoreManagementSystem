@@ -14,6 +14,7 @@ namespace winShoesStoreManagementSystem
     public partial class frmLogin : Form
     {
         public static string username;
+        public static string userId;
         public frmLogin()
         {
             InitializeComponent();

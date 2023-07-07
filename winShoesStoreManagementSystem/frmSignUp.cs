@@ -40,9 +40,9 @@ namespace winShoesStoreManagementSystem
             txtUsername.Clear();
             txtContact.Clear();
             txtPassword.Clear();
-            cmbRole.Text = "";
+            txtConfirmPassword.Clear();
 
-            MessageBox.Show("Data Submitted Sucessfully");
+            MessageBox.Show("Your can SignIn now");
         }
     }
 }
