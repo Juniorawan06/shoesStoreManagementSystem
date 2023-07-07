@@ -50,7 +50,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.White;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(85, 90);
+            this.btnAddItems.Location = new System.Drawing.Point(295, 122);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -78,7 +78,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.White;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(226, 90);
+            this.btnAddBulk.Location = new System.Drawing.Point(436, 122);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -103,7 +103,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(1263, 90);
+            this.txtSearch.Location = new System.Drawing.Point(1037, 129);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -115,12 +115,13 @@
             // 
             // gvUsers
             // 
+            this.gvUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gvUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvUsers.Location = new System.Drawing.Point(83, 192);
+            this.gvUsers.Location = new System.Drawing.Point(294, 192);
             this.gvUsers.Name = "gvUsers";
             this.gvUsers.RowHeadersWidth = 51;
             this.gvUsers.RowTemplate.Height = 24;
-            this.gvUsers.Size = new System.Drawing.Size(1404, 467);
+            this.gvUsers.Size = new System.Drawing.Size(966, 467);
             this.gvUsers.TabIndex = 44;
             // 
             // frmUsers

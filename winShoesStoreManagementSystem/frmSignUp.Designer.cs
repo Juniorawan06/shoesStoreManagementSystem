@@ -201,7 +201,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Radius = 12;
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(309, 37);

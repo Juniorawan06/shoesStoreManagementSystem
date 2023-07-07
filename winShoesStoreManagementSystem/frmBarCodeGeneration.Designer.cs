@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.gbBarCodeGeneration = new Guna.UI.WinForms.GunaGroupBox();
-            this.btnPrint = new Guna.UI.WinForms.GunaButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBarCodeGenration = new System.Windows.Forms.Label();
+            this.btnGenerate = new Guna.UI.WinForms.GunaButton();
             this.lblStyle = new System.Windows.Forms.Label();
-            this.lblQuantity = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.cmTxtStyle = new Guna.UI.WinForms.GunaComboBox();
-            this.cmTxtQuantity = new Guna.UI.WinForms.GunaComboBox();
-            this.cmTxtCategory = new Guna.UI.WinForms.GunaComboBox();
+            this.cmbStyle = new Guna.UI.WinForms.GunaComboBox();
+            this.cmbCategory = new Guna.UI.WinForms.GunaComboBox();
+            this.lblColor = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
             this.lblBrand = new System.Windows.Forms.Label();
-            this.cmTxtSize = new Guna.UI.WinForms.GunaComboBox();
-            this.cmTxtBrand = new Guna.UI.WinForms.GunaComboBox();
-            this.lblBarCodeGenration = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbColor = new Guna.UI.WinForms.GunaComboBox();
+            this.cmbSize = new Guna.UI.WinForms.GunaComboBox();
+            this.cmbBrand = new Guna.UI.WinForms.GunaComboBox();
             this.gbBarCodeGeneration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,17 +54,17 @@
             this.gbBarCodeGeneration.BorderSize = 2;
             this.gbBarCodeGeneration.Controls.Add(this.pictureBox1);
             this.gbBarCodeGeneration.Controls.Add(this.lblBarCodeGenration);
-            this.gbBarCodeGeneration.Controls.Add(this.btnPrint);
+            this.gbBarCodeGeneration.Controls.Add(this.btnGenerate);
             this.gbBarCodeGeneration.Controls.Add(this.lblStyle);
-            this.gbBarCodeGeneration.Controls.Add(this.lblQuantity);
             this.gbBarCodeGeneration.Controls.Add(this.lblCategory);
-            this.gbBarCodeGeneration.Controls.Add(this.cmTxtStyle);
-            this.gbBarCodeGeneration.Controls.Add(this.cmTxtQuantity);
-            this.gbBarCodeGeneration.Controls.Add(this.cmTxtCategory);
+            this.gbBarCodeGeneration.Controls.Add(this.cmbStyle);
+            this.gbBarCodeGeneration.Controls.Add(this.cmbCategory);
+            this.gbBarCodeGeneration.Controls.Add(this.lblColor);
             this.gbBarCodeGeneration.Controls.Add(this.lblSize);
             this.gbBarCodeGeneration.Controls.Add(this.lblBrand);
-            this.gbBarCodeGeneration.Controls.Add(this.cmTxtSize);
-            this.gbBarCodeGeneration.Controls.Add(this.cmTxtBrand);
+            this.gbBarCodeGeneration.Controls.Add(this.cmbColor);
+            this.gbBarCodeGeneration.Controls.Add(this.cmbSize);
+            this.gbBarCodeGeneration.Controls.Add(this.cmbBrand);
             this.gbBarCodeGeneration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.gbBarCodeGeneration.LineColor = System.Drawing.Color.Transparent;
             this.gbBarCodeGeneration.Location = new System.Drawing.Point(262, 110);
@@ -74,32 +74,56 @@
             this.gbBarCodeGeneration.TabIndex = 13;
             this.gbBarCodeGeneration.TextLocation = new System.Drawing.Point(10, 8);
             // 
-            // btnPrint
+            // pictureBox1
             // 
-            this.btnPrint.AnimationHoverSpeed = 0.07F;
-            this.btnPrint.AnimationSpeed = 0.03F;
-            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
-            this.btnPrint.BaseColor = System.Drawing.Color.Gray;
-            this.btnPrint.BorderColor = System.Drawing.Color.Black;
-            this.btnPrint.BorderSize = 1;
-            this.btnPrint.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPrint.FocusedColor = System.Drawing.Color.Empty;
-            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnPrint.ForeColor = System.Drawing.Color.White;
-            this.btnPrint.Image = null;
-            this.btnPrint.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPrint.Location = new System.Drawing.Point(534, 576);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.OnHoverBaseColor = System.Drawing.Color.Gray;
-            this.btnPrint.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnPrint.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnPrint.OnHoverImage = null;
-            this.btnPrint.OnPressedColor = System.Drawing.Color.Black;
-            this.btnPrint.Radius = 10;
-            this.btnPrint.Size = new System.Drawing.Size(103, 42);
-            this.btnPrint.TabIndex = 23;
-            this.btnPrint.Text = "Print";
-            this.btnPrint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBox1.Location = new System.Drawing.Point(287, 284);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(604, 291);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblBarCodeGenration
+            // 
+            this.lblBarCodeGenration.AutoSize = true;
+            this.lblBarCodeGenration.BackColor = System.Drawing.Color.Transparent;
+            this.lblBarCodeGenration.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblBarCodeGenration.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblBarCodeGenration.Location = new System.Drawing.Point(455, 14);
+            this.lblBarCodeGenration.Name = "lblBarCodeGenration";
+            this.lblBarCodeGenration.Size = new System.Drawing.Size(292, 37);
+            this.lblBarCodeGenration.TabIndex = 14;
+            this.lblBarCodeGenration.Text = "Bar Code Generation";
+            // 
+            // btnGenerate
+            // 
+            this.btnGenerate.AnimationHoverSpeed = 0.07F;
+            this.btnGenerate.AnimationSpeed = 0.03F;
+            this.btnGenerate.BackColor = System.Drawing.Color.Transparent;
+            this.btnGenerate.BaseColor = System.Drawing.Color.Gray;
+            this.btnGenerate.BorderColor = System.Drawing.Color.Black;
+            this.btnGenerate.BorderSize = 1;
+            this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerate.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnGenerate.FocusedColor = System.Drawing.Color.Empty;
+            this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnGenerate.ForeColor = System.Drawing.Color.White;
+            this.btnGenerate.Image = null;
+            this.btnGenerate.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnGenerate.Location = new System.Drawing.Point(515, 583);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.btnGenerate.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnGenerate.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnGenerate.OnHoverImage = null;
+            this.btnGenerate.OnPressedColor = System.Drawing.Color.Black;
+            this.btnGenerate.Radius = 10;
+            this.btnGenerate.Size = new System.Drawing.Size(145, 42);
+            this.btnGenerate.TabIndex = 23;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // lblStyle
             // 
@@ -111,16 +135,6 @@
             this.lblStyle.TabIndex = 18;
             this.lblStyle.Text = "Style";
             // 
-            // lblQuantity
-            // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.lblQuantity.Location = new System.Drawing.Point(603, 216);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(79, 20);
-            this.lblQuantity.TabIndex = 19;
-            this.lblQuantity.Text = "Quantity";
-            // 
             // lblCategory
             // 
             this.lblCategory.AutoSize = true;
@@ -131,74 +145,59 @@
             this.lblCategory.TabIndex = 20;
             this.lblCategory.Text = "Category";
             // 
-            // cmTxtStyle
+            // cmbStyle
             // 
-            this.cmTxtStyle.BackColor = System.Drawing.Color.Transparent;
-            this.cmTxtStyle.BaseColor = System.Drawing.Color.White;
-            this.cmTxtStyle.BorderColor = System.Drawing.Color.Silver;
-            this.cmTxtStyle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmTxtStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmTxtStyle.FocusedColor = System.Drawing.Color.Empty;
-            this.cmTxtStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmTxtStyle.ForeColor = System.Drawing.Color.Black;
-            this.cmTxtStyle.FormattingEnabled = true;
-            this.cmTxtStyle.Items.AddRange(new object[] {
-            "--Select--"});
-            this.cmTxtStyle.Location = new System.Drawing.Point(771, 144);
-            this.cmTxtStyle.Name = "cmTxtStyle";
-            this.cmTxtStyle.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmTxtStyle.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmTxtStyle.Radius = 5;
-            this.cmTxtStyle.Size = new System.Drawing.Size(295, 31);
-            this.cmTxtStyle.TabIndex = 13;
+            this.cmbStyle.BackColor = System.Drawing.Color.Transparent;
+            this.cmbStyle.BaseColor = System.Drawing.Color.White;
+            this.cmbStyle.BorderColor = System.Drawing.Color.Silver;
+            this.cmbStyle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStyle.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbStyle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbStyle.ForeColor = System.Drawing.Color.Black;
+            this.cmbStyle.FormattingEnabled = true;
+            this.cmbStyle.Location = new System.Drawing.Point(771, 144);
+            this.cmbStyle.Name = "cmbStyle";
+            this.cmbStyle.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbStyle.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbStyle.Radius = 5;
+            this.cmbStyle.Size = new System.Drawing.Size(295, 31);
+            this.cmbStyle.TabIndex = 13;
             // 
-            // cmTxtQuantity
+            // cmbCategory
             // 
-            this.cmTxtQuantity.BackColor = System.Drawing.Color.Transparent;
-            this.cmTxtQuantity.BaseColor = System.Drawing.Color.White;
-            this.cmTxtQuantity.BorderColor = System.Drawing.Color.Silver;
-            this.cmTxtQuantity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmTxtQuantity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmTxtQuantity.FocusedColor = System.Drawing.Color.Empty;
-            this.cmTxtQuantity.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmTxtQuantity.ForeColor = System.Drawing.Color.Black;
-            this.cmTxtQuantity.FormattingEnabled = true;
-            this.cmTxtQuantity.Items.AddRange(new object[] {
-            "--Select--"});
-            this.cmTxtQuantity.Location = new System.Drawing.Point(603, 241);
-            this.cmTxtQuantity.Name = "cmTxtQuantity";
-            this.cmTxtQuantity.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmTxtQuantity.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmTxtQuantity.Radius = 5;
-            this.cmTxtQuantity.Size = new System.Drawing.Size(295, 31);
-            this.cmTxtQuantity.TabIndex = 14;
+            this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategory.BaseColor = System.Drawing.Color.White;
+            this.cmbCategory.BorderColor = System.Drawing.Color.Silver;
+            this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbCategory.ForeColor = System.Drawing.Color.Black;
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(422, 144);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbCategory.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbCategory.Radius = 5;
+            this.cmbCategory.Size = new System.Drawing.Size(295, 31);
+            this.cmbCategory.TabIndex = 15;
             // 
-            // cmTxtCategory
+            // lblColor
             // 
-            this.cmTxtCategory.BackColor = System.Drawing.Color.Transparent;
-            this.cmTxtCategory.BaseColor = System.Drawing.Color.White;
-            this.cmTxtCategory.BorderColor = System.Drawing.Color.Silver;
-            this.cmTxtCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmTxtCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmTxtCategory.FocusedColor = System.Drawing.Color.Empty;
-            this.cmTxtCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmTxtCategory.ForeColor = System.Drawing.Color.Black;
-            this.cmTxtCategory.FormattingEnabled = true;
-            this.cmTxtCategory.Items.AddRange(new object[] {
-            "--Select--"});
-            this.cmTxtCategory.Location = new System.Drawing.Point(422, 144);
-            this.cmTxtCategory.Name = "cmTxtCategory";
-            this.cmTxtCategory.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmTxtCategory.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmTxtCategory.Radius = 5;
-            this.cmTxtCategory.Size = new System.Drawing.Size(295, 31);
-            this.cmTxtCategory.TabIndex = 15;
+            this.lblColor.AutoSize = true;
+            this.lblColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.lblColor.Location = new System.Drawing.Point(257, 217);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(54, 20);
+            this.lblColor.TabIndex = 21;
+            this.lblColor.Text = "Color";
             // 
             // lblSize
             // 
             this.lblSize.AutoSize = true;
             this.lblSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.lblSize.Location = new System.Drawing.Point(255, 216);
+            this.lblSize.Location = new System.Drawing.Point(619, 217);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(46, 20);
             this.lblSize.TabIndex = 21;
@@ -214,68 +213,62 @@
             this.lblBrand.TabIndex = 22;
             this.lblBrand.Text = "Brand";
             // 
-            // cmTxtSize
+            // cmbColor
             // 
-            this.cmTxtSize.BackColor = System.Drawing.Color.Transparent;
-            this.cmTxtSize.BaseColor = System.Drawing.Color.White;
-            this.cmTxtSize.BorderColor = System.Drawing.Color.Silver;
-            this.cmTxtSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmTxtSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmTxtSize.FocusedColor = System.Drawing.Color.Empty;
-            this.cmTxtSize.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmTxtSize.ForeColor = System.Drawing.Color.Black;
-            this.cmTxtSize.FormattingEnabled = true;
-            this.cmTxtSize.Items.AddRange(new object[] {
-            "--Select--"});
-            this.cmTxtSize.Location = new System.Drawing.Point(255, 241);
-            this.cmTxtSize.Name = "cmTxtSize";
-            this.cmTxtSize.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmTxtSize.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmTxtSize.Radius = 5;
-            this.cmTxtSize.Size = new System.Drawing.Size(295, 31);
-            this.cmTxtSize.TabIndex = 16;
+            this.cmbColor.BackColor = System.Drawing.Color.Transparent;
+            this.cmbColor.BaseColor = System.Drawing.Color.White;
+            this.cmbColor.BorderColor = System.Drawing.Color.Silver;
+            this.cmbColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColor.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbColor.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbColor.ForeColor = System.Drawing.Color.Black;
+            this.cmbColor.FormattingEnabled = true;
+            this.cmbColor.Location = new System.Drawing.Point(257, 242);
+            this.cmbColor.Name = "cmbColor";
+            this.cmbColor.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbColor.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbColor.Radius = 5;
+            this.cmbColor.Size = new System.Drawing.Size(295, 31);
+            this.cmbColor.TabIndex = 16;
             // 
-            // cmTxtBrand
+            // cmbSize
             // 
-            this.cmTxtBrand.BackColor = System.Drawing.Color.Transparent;
-            this.cmTxtBrand.BaseColor = System.Drawing.Color.White;
-            this.cmTxtBrand.BorderColor = System.Drawing.Color.Silver;
-            this.cmTxtBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmTxtBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmTxtBrand.FocusedColor = System.Drawing.Color.Empty;
-            this.cmTxtBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmTxtBrand.ForeColor = System.Drawing.Color.Black;
-            this.cmTxtBrand.FormattingEnabled = true;
-            this.cmTxtBrand.Items.AddRange(new object[] {
-            "--Select--"});
-            this.cmTxtBrand.Location = new System.Drawing.Point(92, 144);
-            this.cmTxtBrand.Name = "cmTxtBrand";
-            this.cmTxtBrand.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cmTxtBrand.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmTxtBrand.Radius = 5;
-            this.cmTxtBrand.Size = new System.Drawing.Size(295, 31);
-            this.cmTxtBrand.TabIndex = 17;
+            this.cmbSize.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSize.BaseColor = System.Drawing.Color.White;
+            this.cmbSize.BorderColor = System.Drawing.Color.Silver;
+            this.cmbSize.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSize.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSize.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSize.ForeColor = System.Drawing.Color.Black;
+            this.cmbSize.FormattingEnabled = true;
+            this.cmbSize.Location = new System.Drawing.Point(619, 242);
+            this.cmbSize.Name = "cmbSize";
+            this.cmbSize.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbSize.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbSize.Radius = 5;
+            this.cmbSize.Size = new System.Drawing.Size(295, 31);
+            this.cmbSize.TabIndex = 16;
             // 
-            // lblBarCodeGenration
+            // cmbBrand
             // 
-            this.lblBarCodeGenration.AutoSize = true;
-            this.lblBarCodeGenration.BackColor = System.Drawing.Color.Transparent;
-            this.lblBarCodeGenration.Font = new System.Drawing.Font("Segoe UI Black", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lblBarCodeGenration.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblBarCodeGenration.Location = new System.Drawing.Point(455, 14);
-            this.lblBarCodeGenration.Name = "lblBarCodeGenration";
-            this.lblBarCodeGenration.Size = new System.Drawing.Size(292, 37);
-            this.lblBarCodeGenration.TabIndex = 14;
-            this.lblBarCodeGenration.Text = "Bar Code Generation";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox1.Location = new System.Drawing.Point(438, 320);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 234);
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.cmbBrand.BackColor = System.Drawing.Color.Transparent;
+            this.cmbBrand.BaseColor = System.Drawing.Color.White;
+            this.cmbBrand.BorderColor = System.Drawing.Color.Silver;
+            this.cmbBrand.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbBrand.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbBrand.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbBrand.ForeColor = System.Drawing.Color.Black;
+            this.cmbBrand.FormattingEnabled = true;
+            this.cmbBrand.Location = new System.Drawing.Point(92, 144);
+            this.cmbBrand.Name = "cmbBrand";
+            this.cmbBrand.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbBrand.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbBrand.Radius = 5;
+            this.cmbBrand.Size = new System.Drawing.Size(295, 31);
+            this.cmbBrand.TabIndex = 17;
             // 
             // frmBarCodeGeneration
             // 
@@ -288,6 +281,7 @@
             this.Name = "frmBarCodeGeneration";
             this.Text = "frmBarCodeGeneration";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmBarCodeGeneration_Load);
             this.gbBarCodeGeneration.ResumeLayout(false);
             this.gbBarCodeGeneration.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -297,18 +291,18 @@
 
         #endregion
         private Guna.UI.WinForms.GunaGroupBox gbBarCodeGeneration;
-        private Guna.UI.WinForms.GunaButton btnPrint;
         private System.Windows.Forms.Label lblStyle;
-        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label lblCategory;
-        private Guna.UI.WinForms.GunaComboBox cmTxtStyle;
-        private Guna.UI.WinForms.GunaComboBox cmTxtQuantity;
-        private Guna.UI.WinForms.GunaComboBox cmTxtCategory;
+        private Guna.UI.WinForms.GunaComboBox cmbStyle;
+        private Guna.UI.WinForms.GunaComboBox cmbCategory;
         private System.Windows.Forms.Label lblSize;
         private System.Windows.Forms.Label lblBrand;
-        private Guna.UI.WinForms.GunaComboBox cmTxtSize;
-        private Guna.UI.WinForms.GunaComboBox cmTxtBrand;
+        private Guna.UI.WinForms.GunaComboBox cmbSize;
+        private Guna.UI.WinForms.GunaComboBox cmbBrand;
         private System.Windows.Forms.Label lblBarCodeGenration;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaButton btnGenerate;
+        private System.Windows.Forms.Label lblColor;
+        private Guna.UI.WinForms.GunaComboBox cmbColor;
     }
 }

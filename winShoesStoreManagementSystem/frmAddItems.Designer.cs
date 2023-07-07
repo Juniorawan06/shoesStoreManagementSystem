@@ -31,19 +31,19 @@
             this.lblAddItems = new System.Windows.Forms.Label();
             this.txtBrand = new Guna.UI.WinForms.GunaTextBox();
             this.lblBrandName = new System.Windows.Forms.Label();
-            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtColor = new Guna.UI.WinForms.GunaTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtSize = new Guna.UI.WinForms.GunaTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
+            this.txtStyle = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdd = new Guna.UI.WinForms.GunaButton();
-            this.txtCostPrice = new Guna.UI.WinForms.GunaTextBox();
-            this.lblCostprice = new System.Windows.Forms.Label();
-            this.txtSellingPrices = new Guna.UI.WinForms.GunaTextBox();
-            this.lblSellingPrice = new System.Windows.Forms.Label();
+            this.txtPrice = new Guna.UI.WinForms.GunaTextBox();
+            this.lblPrice = new System.Windows.Forms.Label();
             this.txtCategory = new Guna.UI.WinForms.GunaTextBox();
             this.lblCategory = new System.Windows.Forms.Label();
+            this.txtQuantity = new Guna.UI.WinForms.GunaTextBox();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblAddItems
@@ -79,6 +79,8 @@
             this.txtBrand.Size = new System.Drawing.Size(1504, 41);
             this.txtBrand.TabIndex = 8;
             this.txtBrand.Text = "Brand";
+            this.txtBrand.Enter += new System.EventHandler(this.txtBrand_Enter);
+            this.txtBrand.Leave += new System.EventHandler(this.txtBrand_Leave);
             // 
             // lblBrandName
             // 
@@ -90,27 +92,29 @@
             this.lblBrandName.TabIndex = 9;
             this.lblBrandName.Text = "Brand Name";
             // 
-            // gunaTextBox1
+            // txtColor
             // 
-            this.gunaTextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox1.BorderSize = 1;
-            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.gunaTextBox1.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox1.Location = new System.Drawing.Point(24, 300);
-            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaTextBox1.Name = "gunaTextBox1";
-            this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Radius = 5;
-            this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(1504, 41);
-            this.gunaTextBox1.TabIndex = 8;
-            this.gunaTextBox1.Text = "Color";
+            this.txtColor.BackColor = System.Drawing.Color.Transparent;
+            this.txtColor.BaseColor = System.Drawing.Color.White;
+            this.txtColor.BorderColor = System.Drawing.Color.Transparent;
+            this.txtColor.BorderSize = 1;
+            this.txtColor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtColor.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtColor.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtColor.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtColor.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtColor.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtColor.Location = new System.Drawing.Point(24, 300);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.PasswordChar = '\0';
+            this.txtColor.Radius = 5;
+            this.txtColor.SelectedText = "";
+            this.txtColor.Size = new System.Drawing.Size(1504, 41);
+            this.txtColor.TabIndex = 8;
+            this.txtColor.Text = "Color";
+            this.txtColor.Enter += new System.EventHandler(this.txtColor_Enter);
+            this.txtColor.Leave += new System.EventHandler(this.txtColor_Leave);
             // 
             // label1
             // 
@@ -122,27 +126,29 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Color";
             // 
-            // gunaTextBox2
+            // txtSize
             // 
-            this.gunaTextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox2.BorderSize = 1;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.gunaTextBox2.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox2.Location = new System.Drawing.Point(24, 389);
-            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Radius = 5;
-            this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(1504, 41);
-            this.gunaTextBox2.TabIndex = 8;
-            this.gunaTextBox2.Text = "Sizes";
+            this.txtSize.BackColor = System.Drawing.Color.Transparent;
+            this.txtSize.BaseColor = System.Drawing.Color.White;
+            this.txtSize.BorderColor = System.Drawing.Color.Transparent;
+            this.txtSize.BorderSize = 1;
+            this.txtSize.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSize.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtSize.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtSize.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtSize.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtSize.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSize.Location = new System.Drawing.Point(24, 389);
+            this.txtSize.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSize.Name = "txtSize";
+            this.txtSize.PasswordChar = '\0';
+            this.txtSize.Radius = 5;
+            this.txtSize.SelectedText = "";
+            this.txtSize.Size = new System.Drawing.Size(1504, 41);
+            this.txtSize.TabIndex = 8;
+            this.txtSize.Text = "Size";
+            this.txtSize.Enter += new System.EventHandler(this.txtSize_Enter);
+            this.txtSize.Leave += new System.EventHandler(this.txtSize_Leave);
             // 
             // label2
             // 
@@ -154,27 +160,29 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Size";
             // 
-            // gunaTextBox3
+            // txtStyle
             // 
-            this.gunaTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.BorderSize = 1;
-            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.gunaTextBox3.ForeColor = System.Drawing.Color.DarkGray;
-            this.gunaTextBox3.Location = new System.Drawing.Point(24, 485);
-            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaTextBox3.Name = "gunaTextBox3";
-            this.gunaTextBox3.PasswordChar = '\0';
-            this.gunaTextBox3.Radius = 5;
-            this.gunaTextBox3.SelectedText = "";
-            this.gunaTextBox3.Size = new System.Drawing.Size(1504, 41);
-            this.gunaTextBox3.TabIndex = 8;
-            this.gunaTextBox3.Text = "Styles";
+            this.txtStyle.BackColor = System.Drawing.Color.Transparent;
+            this.txtStyle.BaseColor = System.Drawing.Color.White;
+            this.txtStyle.BorderColor = System.Drawing.Color.Transparent;
+            this.txtStyle.BorderSize = 1;
+            this.txtStyle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStyle.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtStyle.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtStyle.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtStyle.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtStyle.Location = new System.Drawing.Point(24, 485);
+            this.txtStyle.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStyle.Name = "txtStyle";
+            this.txtStyle.PasswordChar = '\0';
+            this.txtStyle.Radius = 5;
+            this.txtStyle.SelectedText = "";
+            this.txtStyle.Size = new System.Drawing.Size(1504, 41);
+            this.txtStyle.TabIndex = 8;
+            this.txtStyle.Text = "Style";
+            this.txtStyle.Enter += new System.EventHandler(this.txtStyle_Enter);
+            this.txtStyle.Leave += new System.EventHandler(this.txtStyle_Leave);
             // 
             // label3
             // 
@@ -212,70 +220,41 @@
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtCostPrice
+            // txtPrice
             // 
-            this.txtCostPrice.BackColor = System.Drawing.Color.Transparent;
-            this.txtCostPrice.BaseColor = System.Drawing.Color.White;
-            this.txtCostPrice.BorderColor = System.Drawing.Color.Transparent;
-            this.txtCostPrice.BorderSize = 1;
-            this.txtCostPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCostPrice.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCostPrice.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtCostPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtCostPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.txtCostPrice.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtCostPrice.Location = new System.Drawing.Point(25, 582);
-            this.txtCostPrice.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCostPrice.Name = "txtCostPrice";
-            this.txtCostPrice.PasswordChar = '\0';
-            this.txtCostPrice.Radius = 5;
-            this.txtCostPrice.SelectedText = "";
-            this.txtCostPrice.Size = new System.Drawing.Size(1504, 41);
-            this.txtCostPrice.TabIndex = 8;
-            this.txtCostPrice.Text = "Cost Price";
+            this.txtPrice.BackColor = System.Drawing.Color.Transparent;
+            this.txtPrice.BaseColor = System.Drawing.Color.White;
+            this.txtPrice.BorderColor = System.Drawing.Color.Transparent;
+            this.txtPrice.BorderSize = 1;
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPrice.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtPrice.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtPrice.Location = new System.Drawing.Point(24, 584);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.Radius = 5;
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.Size = new System.Drawing.Size(1504, 41);
+            this.txtPrice.TabIndex = 8;
+            this.txtPrice.Text = "Price";
+            this.txtPrice.Enter += new System.EventHandler(this.txtPrice_Enter);
+            this.txtPrice.Leave += new System.EventHandler(this.txtPrice_Leave);
             // 
-            // lblCostprice
+            // lblPrice
             // 
-            this.lblCostprice.AutoSize = true;
-            this.lblCostprice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblCostprice.Location = new System.Drawing.Point(29, 555);
-            this.lblCostprice.Name = "lblCostprice";
-            this.lblCostprice.Size = new System.Drawing.Size(91, 23);
-            this.lblCostprice.TabIndex = 9;
-            this.lblCostprice.Text = "Cost Price";
-            // 
-            // txtSellingPrices
-            // 
-            this.txtSellingPrices.BackColor = System.Drawing.Color.Transparent;
-            this.txtSellingPrices.BaseColor = System.Drawing.Color.White;
-            this.txtSellingPrices.BorderColor = System.Drawing.Color.Transparent;
-            this.txtSellingPrices.BorderSize = 1;
-            this.txtSellingPrices.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSellingPrices.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtSellingPrices.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtSellingPrices.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSellingPrices.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.txtSellingPrices.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtSellingPrices.Location = new System.Drawing.Point(24, 679);
-            this.txtSellingPrices.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSellingPrices.Name = "txtSellingPrices";
-            this.txtSellingPrices.PasswordChar = '\0';
-            this.txtSellingPrices.Radius = 5;
-            this.txtSellingPrices.SelectedText = "";
-            this.txtSellingPrices.Size = new System.Drawing.Size(1504, 41);
-            this.txtSellingPrices.TabIndex = 8;
-            this.txtSellingPrices.Text = "Selling Price";
-            // 
-            // lblSellingPrice
-            // 
-            this.lblSellingPrice.AutoSize = true;
-            this.lblSellingPrice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
-            this.lblSellingPrice.Location = new System.Drawing.Point(28, 652);
-            this.lblSellingPrice.Name = "lblSellingPrice";
-            this.lblSellingPrice.Size = new System.Drawing.Size(111, 23);
-            this.lblSellingPrice.TabIndex = 9;
-            this.lblSellingPrice.Text = "Selling Price";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
+            this.lblPrice.Location = new System.Drawing.Point(28, 557);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(50, 23);
+            this.lblPrice.TabIndex = 9;
+            this.lblPrice.Text = "Price";
             // 
             // txtCategory
             // 
@@ -298,6 +277,8 @@
             this.txtCategory.Size = new System.Drawing.Size(1504, 41);
             this.txtCategory.TabIndex = 8;
             this.txtCategory.Text = "Category";
+            this.txtCategory.Enter += new System.EventHandler(this.txtCategory_Enter);
+            this.txtCategory.Leave += new System.EventHandler(this.txtCategory_Leave);
             // 
             // lblCategory
             // 
@@ -309,6 +290,40 @@
             this.lblCategory.TabIndex = 9;
             this.lblCategory.Text = "Category";
             // 
+            // txtQuantity
+            // 
+            this.txtQuantity.BackColor = System.Drawing.Color.Transparent;
+            this.txtQuantity.BaseColor = System.Drawing.Color.White;
+            this.txtQuantity.BorderColor = System.Drawing.Color.Transparent;
+            this.txtQuantity.BorderSize = 1;
+            this.txtQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQuantity.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtQuantity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtQuantity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtQuantity.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.txtQuantity.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtQuantity.Location = new System.Drawing.Point(24, 687);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.PasswordChar = '\0';
+            this.txtQuantity.Radius = 5;
+            this.txtQuantity.SelectedText = "";
+            this.txtQuantity.Size = new System.Drawing.Size(1504, 41);
+            this.txtQuantity.TabIndex = 8;
+            this.txtQuantity.Text = "Quantity";
+            this.txtQuantity.Enter += new System.EventHandler(this.txtQuantity_Enter);
+            this.txtQuantity.Leave += new System.EventHandler(this.txtQuantity_Leave);
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Italic);
+            this.lblQuantity.Location = new System.Drawing.Point(28, 660);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(85, 23);
+            this.lblQuantity.TabIndex = 9;
+            this.lblQuantity.Text = "Quantity";
+            // 
             // frmAddItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -316,19 +331,19 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1569, 879);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.lblSellingPrice);
-            this.Controls.Add(this.lblCostprice);
+            this.Controls.Add(this.lblQuantity);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblBrandName);
-            this.Controls.Add(this.txtSellingPrices);
-            this.Controls.Add(this.txtCostPrice);
-            this.Controls.Add(this.gunaTextBox3);
-            this.Controls.Add(this.gunaTextBox2);
+            this.Controls.Add(this.txtQuantity);
+            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtStyle);
+            this.Controls.Add(this.txtSize);
             this.Controls.Add(this.txtCategory);
-            this.Controls.Add(this.gunaTextBox1);
+            this.Controls.Add(this.txtColor);
             this.Controls.Add(this.txtBrand);
             this.Controls.Add(this.lblAddItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -345,18 +360,18 @@
         private System.Windows.Forms.Label lblAddItems;
         private Guna.UI.WinForms.GunaTextBox txtBrand;
         private System.Windows.Forms.Label lblBrandName;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
+        private Guna.UI.WinForms.GunaTextBox txtColor;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox txtSize;
         private System.Windows.Forms.Label label2;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
+        private Guna.UI.WinForms.GunaTextBox txtStyle;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaButton btnAdd;
-        private Guna.UI.WinForms.GunaTextBox txtCostPrice;
-        private System.Windows.Forms.Label lblCostprice;
-        private Guna.UI.WinForms.GunaTextBox txtSellingPrices;
-        private System.Windows.Forms.Label lblSellingPrice;
+        private Guna.UI.WinForms.GunaTextBox txtPrice;
+        private System.Windows.Forms.Label lblPrice;
         private Guna.UI.WinForms.GunaTextBox txtCategory;
         private System.Windows.Forms.Label lblCategory;
+        private Guna.UI.WinForms.GunaTextBox txtQuantity;
+        private System.Windows.Forms.Label lblQuantity;
     }
 }

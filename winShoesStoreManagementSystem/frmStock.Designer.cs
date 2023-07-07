@@ -32,12 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gvStock = new Guna.UI.WinForms.GunaDataGridView();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAddItems = new Guna.UI.WinForms.GunaButton();
             this.btnAddBulk = new Guna.UI.WinForms.GunaButton();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
@@ -62,13 +56,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gvStock.ColumnHeadersHeight = 27;
-            this.gvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.shoeId,
-            this.shoeBrand,
-            this.shoeCategory,
-            this.shoeColor,
-            this.shoeStyle,
-            this.shoeSize});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -79,7 +66,7 @@
             this.gvStock.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvStock.EnableHeadersVisualStyles = false;
             this.gvStock.GridColor = System.Drawing.Color.White;
-            this.gvStock.Location = new System.Drawing.Point(50, 268);
+            this.gvStock.Location = new System.Drawing.Point(50, 217);
             this.gvStock.Name = "gvStock";
             this.gvStock.ReadOnly = true;
             this.gvStock.RowHeadersVisible = false;
@@ -111,48 +98,6 @@
             this.gvStock.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gvStock.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // shoeId
-            // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
-            // 
-            // shoeBrand
-            // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeCategory
-            // 
-            this.shoeCategory.HeaderText = "Shoe Category";
-            this.shoeCategory.MinimumWidth = 6;
-            this.shoeCategory.Name = "shoeCategory";
-            this.shoeCategory.ReadOnly = true;
-            // 
-            // shoeColor
-            // 
-            this.shoeColor.HeaderText = "Shoe Color";
-            this.shoeColor.MinimumWidth = 6;
-            this.shoeColor.Name = "shoeColor";
-            this.shoeColor.ReadOnly = true;
-            // 
-            // shoeStyle
-            // 
-            this.shoeStyle.HeaderText = "Shoe Style";
-            this.shoeStyle.MinimumWidth = 6;
-            this.shoeStyle.Name = "shoeStyle";
-            this.shoeStyle.ReadOnly = true;
-            // 
-            // shoeSize
-            // 
-            this.shoeSize.HeaderText = "Shoe Size";
-            this.shoeSize.MinimumWidth = 6;
-            this.shoeSize.Name = "shoeSize";
-            this.shoeSize.ReadOnly = true;
-            // 
             // btnAddItems
             // 
             this.btnAddItems.AnimationHoverSpeed = 0.07F;
@@ -168,7 +113,7 @@
             this.btnAddItems.ForeColor = System.Drawing.Color.White;
             this.btnAddItems.Image = null;
             this.btnAddItems.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddItems.Location = new System.Drawing.Point(50, 177);
+            this.btnAddItems.Location = new System.Drawing.Point(50, 126);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddItems.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -196,7 +141,7 @@
             this.btnAddBulk.ForeColor = System.Drawing.Color.White;
             this.btnAddBulk.Image = null;
             this.btnAddBulk.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddBulk.Location = new System.Drawing.Point(190, 177);
+            this.btnAddBulk.Location = new System.Drawing.Point(190, 126);
             this.btnAddBulk.Name = "btnAddBulk";
             this.btnAddBulk.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.btnAddBulk.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -221,7 +166,7 @@
             this.txtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtSearch.Location = new System.Drawing.Point(1098, 210);
+            this.txtSearch.Location = new System.Drawing.Point(1098, 159);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -252,12 +197,6 @@
         #endregion
 
         private Guna.UI.WinForms.GunaDataGridView gvStock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
         private Guna.UI.WinForms.GunaButton btnAddItems;
         private Guna.UI.WinForms.GunaButton btnAddBulk;
         private Guna.UI.WinForms.GunaTextBox txtSearch;

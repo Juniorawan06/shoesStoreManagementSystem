@@ -11,13 +11,12 @@ using System.Windows.Forms;
 
 namespace winShoesStoreManagementSystem
 {
-    public partial class frmAddItems : Form
+    public partial class frmAddPurchases : Form
     {
-        public frmAddItems()
+        public frmAddPurchases()
         {
             InitializeComponent();
         }
-
         private void txtBrand_Enter(object sender, EventArgs e)
         {
             if (txtBrand.Text == "Brand")
@@ -110,19 +109,19 @@ namespace winShoesStoreManagementSystem
 
         private void txtPrice_Enter(object sender, EventArgs e)
         {
-            if (txtPrice.Text == "Price")
+            if (txtCostPrice.Text == "Cost Price")
             {
-                txtPrice.Text = string.Empty;
-                txtPrice.ForeColor = SystemColors.WindowText;
+                txtCostPrice.Text = string.Empty;
+                txtCostPrice.ForeColor = SystemColors.WindowText;
             }
         }
 
         private void txtPrice_Leave(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtPrice.Text))
+            if (string.IsNullOrWhiteSpace(txtCostPrice.Text))
             {
-                txtPrice.Text = "Price";
-                txtPrice.ForeColor = SystemColors.GrayText;
+                txtCostPrice.Text = "Cost Price";
+                txtCostPrice.ForeColor = SystemColors.GrayText;
             }
         }
 
@@ -146,82 +145,24 @@ namespace winShoesStoreManagementSystem
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=JUNIOR-06\\SQLEXPRESS;Initial Catalog=dbSsms;Integrated Security=True";
+            SqlConnection con = new SqlConnection("Data Source=JUNIOR-06\\SQLEXPRESS;Initial Catalog=dbSsms;Integrated Security=True");
+            string qry = "insert into tblPurchases values ('" + txtBrand.Text + "','" + txtCategory.Text + "','" + txtStyle.Text + "','" + txtColor.Text + "','" + txtSize.Text + "','" + txtQuantity.Text + "','" + txtCostPrice.Text + "', 1, current_timestamp);";
+            SqlCommand cmd = new SqlCommand(qry, con);
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
 
-                // Start the transaction
-                SqlTransaction transaction = connection.BeginTransaction();
+            txtBrand.Clear();
+            txtCategory.Clear();
+            txtStyle.Clear();
+            txtColor.Clear();
+            txtSize.Clear();
+            txtQuantity.Clear();
+            txtCostPrice.Clear();
 
-                try
-                {
-                    // Execute your SQL code within the transaction
-                    using (SqlCommand cmd = connection.CreateCommand())
-                    {
-                        cmd.Transaction = transaction;
-                        cmd.CommandText = @"
-                         BEGIN TRANSACTION;
-                         
-                         DECLARE @brandId INT, @categoryId INT, @styleId INT, @colorId INT, @sizeId INT;
-                         
-                         INSERT INTO tblBrands (brand)
-                         VALUES (@brand);
-                         SET @brandId = SCOPE_IDENTITY();
-                         
-                         INSERT INTO tblCategories (category)
-                         VALUES (@category);
-                         SET @categoryId = SCOPE_IDENTITY();
-                         
-                         INSERT INTO tblStyles (style)
-                         VALUES (@style);
-                         SET @styleId = SCOPE_IDENTITY();
-                         
-                         INSERT INTO tblColors (color)
-                         VALUES (@color);
-                         SET @colorId = SCOPE_IDENTITY();
-                         
-                         INSERT INTO tblSizes (size)
-                         VALUES (@size);
-                         SET @sizeId = SCOPE_IDENTITY();
-                    
-                         INSERT INTO tblPrices (pirce)
-                         VALUES (@price);
-                         SET @priceId = SCOPE_IDENTITY();
-                         
-                         INSERT INTO tblStock (brand, category, style, color, size, price, quantity)
-                         VALUES (@brandId, @categoryId, @styleId, @colorId, @sizeId, @priceId, @quantity);
-
-                         COMMIT;
-                         ";
-
-                        cmd.Parameters.AddWithValue("@brand", txtBrand.Text);
-                        cmd.Parameters.AddWithValue("@category", txtCategory.Text);
-                        cmd.Parameters.AddWithValue("@style", txtStyle.Text);
-                        cmd.Parameters.AddWithValue("@color", txtColor.Text);
-                        cmd.Parameters.AddWithValue("@size", txtSize.Text);
-                        cmd.Parameters.AddWithValue("@price", txtPrice.Text);
-                        cmd.Parameters.AddWithValue("@quantity", txtQuantity.Text);
-
-                        cmd.ExecuteNonQuery();
-                    }
-
-
-                    // Commit the transaction if all statements executed successfully
-                    transaction.Commit();
-                    MessageBox.Show("Transaction completed successfully.");
-                }
-                catch (Exception ex)
-                {
-                    // Handle any exceptions and rollback the transaction if necessary
-                    transaction.Rollback();
-
-                    // Display or log the error message
-                    MessageBox.Show("Transaction failed: " + ex.Message);
-                }
-            }
+            MessageBox.Show("Purchases Added Successfully");
+            this.Close();
         }
-
     }
 }

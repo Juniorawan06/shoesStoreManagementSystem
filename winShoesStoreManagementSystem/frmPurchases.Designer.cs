@@ -28,88 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gvPurchases = new Guna.UI.WinForms.GunaDataGridView();
             this.txtSearch = new Guna.UI.WinForms.GunaTextBox();
-            this.shoeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeBrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeColor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.shoeSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchasePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAdd = new Guna.UI.WinForms.GunaButton();
+            this.gvPurchases = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.gvPurchases)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gvPurchases
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gvPurchases.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gvPurchases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gvPurchases.BackgroundColor = System.Drawing.Color.White;
-            this.gvPurchases.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gvPurchases.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gvPurchases.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gvPurchases.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gvPurchases.ColumnHeadersHeight = 27;
-            this.gvPurchases.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.shoeId,
-            this.shoeBrand,
-            this.shoeCategory,
-            this.shoeColor,
-            this.shoeStyle,
-            this.shoeSize,
-            this.purchasePrice});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gvPurchases.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gvPurchases.EnableHeadersVisualStyles = false;
-            this.gvPurchases.GridColor = System.Drawing.Color.White;
-            this.gvPurchases.Location = new System.Drawing.Point(80, 176);
-            this.gvPurchases.Name = "gvPurchases";
-            this.gvPurchases.ReadOnly = true;
-            this.gvPurchases.RowHeadersVisible = false;
-            this.gvPurchases.RowHeadersWidth = 51;
-            this.gvPurchases.RowTemplate.Height = 24;
-            this.gvPurchases.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvPurchases.Size = new System.Drawing.Size(1392, 482);
-            this.gvPurchases.TabIndex = 38;
-            this.gvPurchases.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gvPurchases.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gvPurchases.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gvPurchases.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gvPurchases.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gvPurchases.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gvPurchases.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gvPurchases.ThemeStyle.GridColor = System.Drawing.Color.White;
-            this.gvPurchases.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Gray;
-            this.gvPurchases.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gvPurchases.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gvPurchases.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gvPurchases.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gvPurchases.ThemeStyle.HeaderStyle.Height = 27;
-            this.gvPurchases.ThemeStyle.ReadOnly = true;
-            this.gvPurchases.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gvPurchases.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gvPurchases.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gvPurchases.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gvPurchases.ThemeStyle.RowsStyle.Height = 24;
-            this.gvPurchases.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gvPurchases.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // txtSearch
             // 
@@ -133,80 +57,67 @@
             this.txtSearch.TabIndex = 37;
             this.txtSearch.Text = "Search...";
             // 
-            // shoeId
+            // btnAdd
             // 
-            this.shoeId.HeaderText = "Shoe ID";
-            this.shoeId.MinimumWidth = 6;
-            this.shoeId.Name = "shoeId";
-            this.shoeId.ReadOnly = true;
+            this.btnAdd.AnimationHoverSpeed = 0.07F;
+            this.btnAdd.AnimationSpeed = 0.03F;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.BaseColor = System.Drawing.Color.Gray;
+            this.btnAdd.BorderColor = System.Drawing.Color.Black;
+            this.btnAdd.BorderSize = 1;
+            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAdd.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Image = null;
+            this.btnAdd.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnAdd.Location = new System.Drawing.Point(82, 113);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.btnAdd.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAdd.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAdd.OnHoverImage = null;
+            this.btnAdd.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAdd.Radius = 10;
+            this.btnAdd.Size = new System.Drawing.Size(160, 42);
+            this.btnAdd.TabIndex = 39;
+            this.btnAdd.Text = "+ Add";
+            this.btnAdd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // shoeBrand
+            // gvPurchases
             // 
-            this.shoeBrand.HeaderText = "Shoe Brand";
-            this.shoeBrand.MinimumWidth = 6;
-            this.shoeBrand.Name = "shoeBrand";
-            this.shoeBrand.ReadOnly = true;
-            // 
-            // shoeCategory
-            // 
-            this.shoeCategory.HeaderText = "Shoe Category";
-            this.shoeCategory.MinimumWidth = 6;
-            this.shoeCategory.Name = "shoeCategory";
-            this.shoeCategory.ReadOnly = true;
-            // 
-            // shoeColor
-            // 
-            this.shoeColor.HeaderText = "Shoe Color";
-            this.shoeColor.MinimumWidth = 6;
-            this.shoeColor.Name = "shoeColor";
-            this.shoeColor.ReadOnly = true;
-            // 
-            // shoeStyle
-            // 
-            this.shoeStyle.HeaderText = "Shoe Style";
-            this.shoeStyle.MinimumWidth = 6;
-            this.shoeStyle.Name = "shoeStyle";
-            this.shoeStyle.ReadOnly = true;
-            // 
-            // shoeSize
-            // 
-            this.shoeSize.HeaderText = "Shoe Size";
-            this.shoeSize.MinimumWidth = 6;
-            this.shoeSize.Name = "shoeSize";
-            this.shoeSize.ReadOnly = true;
-            // 
-            // purchasePrice
-            // 
-            this.purchasePrice.HeaderText = "Cost Price";
-            this.purchasePrice.MinimumWidth = 6;
-            this.purchasePrice.Name = "purchasePrice";
-            this.purchasePrice.ReadOnly = true;
+            this.gvPurchases.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gvPurchases.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvPurchases.Location = new System.Drawing.Point(82, 215);
+            this.gvPurchases.Name = "gvPurchases";
+            this.gvPurchases.RowHeadersWidth = 51;
+            this.gvPurchases.RowTemplate.Height = 24;
+            this.gvPurchases.Size = new System.Drawing.Size(1390, 377);
+            this.gvPurchases.TabIndex = 40;
             // 
             // frmPurchases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1569, 732);
             this.Controls.Add(this.gvPurchases);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPurchases";
             this.Text = "frmPurchases";
+            this.Load += new System.EventHandler(this.frmPurchases_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvPurchases)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaDataGridView gvPurchases;
         private Guna.UI.WinForms.GunaTextBox txtSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeBrand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeCategory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeColor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeStyle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn shoeSize;
-        private System.Windows.Forms.DataGridViewTextBoxColumn purchasePrice;
+        private Guna.UI.WinForms.GunaButton btnAdd;
+        private System.Windows.Forms.DataGridView gvPurchases;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
